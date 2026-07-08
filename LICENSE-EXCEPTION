@@ -1,0 +1,20 @@
+NextBitDeskify Output Exception
+
+This is an exception to the GNU General Public License version 3 (GPLv3),
+under which NextBitDeskify is licensed (see the LICENSE file).
+
+As an additional permission under section 7 of the GPLv3:
+
+When you use NextBitDeskify, or a build of NextBitDeskify produced by the standard NextBitDeskify build
+and packaging process, to generate a target application ("NextBitDeskify Output"),
+the portions of NextBitDeskify incorporated into that NextBitDeskify Output do not by
+themselves cause the NextBitDeskify Output as a whole to be or become subject to the
+GPLv3. You may distribute such NextBitDeskify Output under license terms of your own
+choosing, including proprietary terms.
+
+This permission does NOT apply to NextBitDeskify itself or to any modified version of
+NextBitDeskify's own source code: anyone who distributes NextBitDeskify, or a work derived from
+NextBitDeskify's source code beyond the configuration and packaging performed by the
+standard build process, remains fully bound by the GPLv3.
+
+Copyright (c) 2024 Aquilawilfred and the NextBitDeskify contributors.

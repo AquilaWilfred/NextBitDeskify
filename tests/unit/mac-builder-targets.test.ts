@@ -5,7 +5,11 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 // Point it at the repo root so the import chain resolves under vitest.
 vi.mock('@/utils/dir', () => ({
   npmDirectory: process.cwd(),
-  tauriConfigDirectory: path.join(process.cwd(), 'src-tauri', '.nextbitdeskify'),
+  tauriConfigDirectory: path.join(
+    process.cwd(),
+    'src-tauri',
+    '.nextbitdeskify',
+  ),
 }));
 
 import MacBuilder from '@/builders/MacBuilder';

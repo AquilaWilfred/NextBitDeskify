@@ -491,7 +491,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const appWindow = tauri.window.getCurrentWindow();
   const invoke = tauri.core.invoke;
   const nextbitdeskifyConfig = window["nextbitdeskifyConfig"] || {};
-  const forceInternalNavigation = nextbitdeskifyConfig.force_internal_navigation === true;
+  const forceInternalNavigation =
+    nextbitdeskifyConfig.force_internal_navigation === true;
   const internalUrlRegex = nextbitdeskifyConfig.internal_url_regex || "";
   let internalUrlPattern = null;
   if (internalUrlRegex) {
@@ -652,7 +653,10 @@ document.addEventListener("DOMContentLoaded", () => {
       // navigate in place so the SSO redirect chain and callback stay in the
       // webview instead of falling through to the system browser.
       if (window.isAuthLink(absoluteUrl)) {
-        console.log("[NextBitDeskify] Handling OAuth navigation in-app:", absoluteUrl);
+        console.log(
+          "[NextBitDeskify] Handling OAuth navigation in-app:",
+          absoluteUrl,
+        );
         e.preventDefault();
         e.stopImmediatePropagation();
 
@@ -1309,7 +1313,10 @@ function setDefaultZoom() {
   const htmlZoom = window.localStorage.getItem("htmlZoom");
   if (htmlZoom) {
     setZoom(htmlZoom);
-  } else if (window.nextbitdeskifyConfig?.zoom && window.nextbitdeskifyConfig.zoom !== 100) {
+  } else if (
+    window.nextbitdeskifyConfig?.zoom &&
+    window.nextbitdeskifyConfig.zoom !== 100
+  ) {
     setZoom(`${window.nextbitdeskifyConfig.zoom}%`);
   }
 }

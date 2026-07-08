@@ -66,7 +66,12 @@ pub fn set_window(
 pub fn open_additional_window(app: &AppHandle) -> tauri::Result<WebviewWindow> {
     let state = app.state::<MultiWindowState>();
     let label = state.next_window_label();
-    build_window_with_label(app, &state.nextbitdeskify_config, &state.tauri_config, &label)
+    build_window_with_label(
+        app,
+        &state.nextbitdeskify_config,
+        &state.tauri_config,
+        &label,
+    )
 }
 
 struct WindowBuildOptions<'a> {

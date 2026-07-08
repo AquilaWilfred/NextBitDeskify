@@ -438,8 +438,13 @@ async function writeAllConfigs(
   const bundleConf = { bundle: tauriConf.bundle };
   await fsExtra.outputJSON(configPath, bundleConf, { spaces: 4 });
 
-  const nextbitdeskifyConfigPath = path.join(tauriConfigDirectory, 'nextbitdeskify.json');
-  await fsExtra.outputJSON(nextbitdeskifyConfigPath, tauriConf.nextbitdeskify, { spaces: 4 });
+  const nextbitdeskifyConfigPath = path.join(
+    tauriConfigDirectory,
+    'nextbitdeskify.json',
+  );
+  await fsExtra.outputJSON(nextbitdeskifyConfigPath, tauriConf.nextbitdeskify, {
+    spaces: 4,
+  });
 
   const tauriConf2 = JSON.parse(JSON.stringify(tauriConf));
   delete tauriConf2.nextbitdeskify;
@@ -477,7 +482,10 @@ export async function mergeConfig(
     );
   }
   const tauriConfWindowOptions = buildWindowConfigOverrides(options, platform);
-  Object.assign(tauriConf.nextbitdeskify.windows[0], { url, ...tauriConfWindowOptions });
+  Object.assign(tauriConf.nextbitdeskify.windows[0], {
+    url,
+    ...tauriConfWindowOptions,
+  });
 
   tauriConf.productName = name;
   tauriConf.identifier = identifier;

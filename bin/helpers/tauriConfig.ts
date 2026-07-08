@@ -4,7 +4,9 @@ import { npmDirectory } from '@/utils/dir';
 
 // Load configs from npm package directory, not from project source
 const tauriSrcDir = path.join(npmDirectory, 'src-tauri');
-const nextbitdeskifyConf = fsExtra.readJSONSync(path.join(tauriSrcDir, 'nextbitdeskify.json'));
+const nextbitdeskifyConf = fsExtra.readJSONSync(
+  path.join(tauriSrcDir, 'nextbitdeskify.json'),
+);
 const CommonConf = fsExtra.readJSONSync(
   path.join(tauriSrcDir, 'tauri.conf.json'),
 );

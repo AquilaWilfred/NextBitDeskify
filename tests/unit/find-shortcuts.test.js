@@ -208,7 +208,9 @@ describe("Find injection", () => {
       ),
     ).toBe("");
     expect(context.window.nextbitdeskifyFind.open().isOpen).toBe(false);
-    expect(context.window.nextbitdeskifyFind.search("alpha").matchCount).toBe(0);
+    expect(context.window.nextbitdeskifyFind.search("alpha").matchCount).toBe(
+      0,
+    );
     expect(context.window.nextbitdeskifyFind.next().activeIndex).toBe(-1);
     expect(context.window.nextbitdeskifyFind.previous().activeIndex).toBe(-1);
     expect(context.window.nextbitdeskifyFind.close().matchCount).toBe(0);

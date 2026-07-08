@@ -5,16 +5,19 @@ use tauri::{AppHandle, Config, Manager, WebviewWindow};
 
 pub fn get_nextbitdeskify_config() -> (NextBitDeskifyConfig, Config) {
     #[cfg(feature = "cli-build")]
-    let nextbitdeskify_config: NextBitDeskifyConfig = serde_json::from_str(include_str!("../.nextbitdeskify/nextbitdeskify.json"))
-        .expect("Failed to parse nextbitdeskify config");
+    let nextbitdeskify_config: NextBitDeskifyConfig =
+        serde_json::from_str(include_str!("../.nextbitdeskify/nextbitdeskify.json"))
+            .expect("Failed to parse nextbitdeskify config");
 
     #[cfg(not(feature = "cli-build"))]
     let nextbitdeskify_config: NextBitDeskifyConfig =
-        serde_json::from_str(include_str!("../nextbitdeskify.json")).expect("Failed to parse nextbitdeskify config");
+        serde_json::from_str(include_str!("../nextbitdeskify.json"))
+            .expect("Failed to parse nextbitdeskify config");
 
     #[cfg(feature = "cli-build")]
-    let tauri_config: Config = serde_json::from_str(include_str!("../.nextbitdeskify/tauri.conf.json"))
-        .expect("Failed to parse tauri config");
+    let tauri_config: Config =
+        serde_json::from_str(include_str!("../.nextbitdeskify/tauri.conf.json"))
+            .expect("Failed to parse tauri config");
 
     #[cfg(not(feature = "cli-build"))]
     let tauri_config: Config = serde_json::from_str(include_str!("../tauri.conf.json"))

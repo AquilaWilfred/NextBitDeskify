@@ -72,16 +72,16 @@ The URL is the link to the web page you want to package or the path to a local H
 
 Various options are available for customization. `nextbitdeskify --help` shows every supported CLI option. This page is the complete reference.
 
-| Option             | Description                                     | Example                                        |
-| ------------------ | ----------------------------------------------- | ---------------------------------------------- |
-| `--name`           | Application name                                | `--name "Weekly"`                              |
+| Option             | Description                                     | Example                                                           |
+| ------------------ | ----------------------------------------------- | ----------------------------------------------------------------- |
+| `--name`           | Application name                                | `--name "Weekly"`                                                 |
 | `--icon`           | Custom icon (optional, auto-fetch website icon) | `--icon https://cdn.Aquilawilfred.fun/nextbitdeskify/weekly.icns` |
-| `--width`          | Window width (default: 1200px)                  | `--width 1400`                                 |
-| `--height`         | Window height (default: 780px)                  | `--height 900`                                 |
-| `--hide-title-bar` | Immersive header (macOS only)                   | `--hide-title-bar`                             |
-| `--debug`          | Enable development tools                        | `--debug`                                      |
-| `--help`           | Show all CLI options                            | `--help`                                       |
-| `--version`        | Show CLI version                                | `--version`                                    |
+| `--width`          | Window width (default: 1200px)                  | `--width 1400`                                                    |
+| `--height`         | Window height (default: 780px)                  | `--height 900`                                                    |
+| `--hide-title-bar` | Immersive header (macOS only)                   | `--hide-title-bar`                                                |
+| `--debug`          | Enable development tools                        | `--debug`                                                         |
+| `--help`           | Show all CLI options                            | `--help`                                                          |
+| `--version`        | Show CLI version                                | `--version`                                                       |
 
 For complete options, see detailed sections below.
 

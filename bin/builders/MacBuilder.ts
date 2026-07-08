@@ -62,7 +62,11 @@ export default class MacBuilder extends BaseBuilder {
   }
 
   protected getBuildCommand(packageManager: string = 'pnpm'): string {
-    const configPath = path.join('src-tauri', '.nextbitdeskify', 'tauri.conf.json');
+    const configPath = path.join(
+      'src-tauri',
+      '.nextbitdeskify',
+      'tauri.conf.json',
+    );
     const actualArch = this.getActualArch();
 
     const buildTarget = this.getTauriTarget(actualArch, 'darwin');

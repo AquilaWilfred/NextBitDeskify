@@ -142,21 +142,25 @@ describe("event link guard", () => {
   it("bypasses javascript pseudo-links", () => {
     const { shouldBypassNextBitDeskifyLinkHandling } = loadEventHelpers();
 
-    expect(shouldBypassNextBitDeskifyLinkHandling("javascript:void(0)")).toBe(true);
+    expect(shouldBypassNextBitDeskifyLinkHandling("javascript:void(0)")).toBe(
+      true,
+    );
   });
 
   it("bypasses hash-only anchors", () => {
     const { shouldBypassNextBitDeskifyLinkHandling } = loadEventHelpers();
 
-    expect(shouldBypassNextBitDeskifyLinkHandling("#captcha-confirm")).toBe(true);
+    expect(shouldBypassNextBitDeskifyLinkHandling("#captcha-confirm")).toBe(
+      true,
+    );
   });
 
   it("keeps normal navigations under NextBitDeskify handling", () => {
     const { shouldBypassNextBitDeskifyLinkHandling } = loadEventHelpers();
 
-    expect(shouldBypassNextBitDeskifyLinkHandling("https://example.com/account")).toBe(
-      false,
-    );
+    expect(
+      shouldBypassNextBitDeskifyLinkHandling("https://example.com/account"),
+    ).toBe(false);
   });
 
   it("navigates macOS auth URLs in the current window", () => {

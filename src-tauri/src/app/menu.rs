@@ -10,7 +10,8 @@ pub fn set_app_menu(
     enable_find: bool,
 ) -> tauri::Result<()> {
     let nextbitdeskify_version = env!("CARGO_PKG_VERSION");
-    let nextbitdeskify_menu_item_title = format!("Built with NextBitDeskify V{}", nextbitdeskify_version);
+    let nextbitdeskify_menu_item_title =
+        format!("Built with NextBitDeskify V{}", nextbitdeskify_version);
 
     let window_submenu = window_menu(app)?;
 
@@ -219,7 +220,8 @@ fn window_menu(app: &AppHandle<Wry>) -> tauri::Result<Submenu<Wry>> {
 
 fn help_menu(app: &AppHandle<Wry>, title: &str) -> tauri::Result<Submenu<Wry>> {
     let help_menu = Submenu::new(app, "Help", true)?;
-    let github_item = MenuItem::with_id(app, "nextbitdeskify_github_link", title, true, None::<&str>)?;
+    let github_item =
+        MenuItem::with_id(app, "nextbitdeskify_github_link", title, true, None::<&str>)?;
     help_menu.append(&github_item)?;
     Ok(help_menu)
 }
@@ -230,9 +232,10 @@ pub fn handle_menu_click(app_handle: &AppHandle, id: &str) {
             open_additional_window_safe(app_handle);
         }
         "nextbitdeskify_github_link" => {
-            let _ = app_handle
-                .opener()
-                .open_url("https://github.com/Aquilawilfred/NextBitDeskify", None::<&str>);
+            let _ = app_handle.opener().open_url(
+                "https://github.com/Aquilawilfred/NextBitDeskify",
+                None::<&str>,
+            );
         }
         "reload" => {
             if let Some(window) = app_handle.get_webview_window("nextbitdeskify") {

@@ -26,13 +26,13 @@ node dist/cli.js "<URL>" --name <AppName> [options]
 
 Before running the build, confirm these with the user:
 
-| Parameter                  | Why it matters                                                                                                    |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| URL                        | The target website                                                                                                |
-| Name                       | Becomes the `.app` / `.exe` name and productName                                                                  |
-| Bundle ID (`--identifier`) | Defaults to `com.nextbitdeskify.a{md5hash}` — set explicitly for clean installs (e.g. `com.nextbitdeskify.youtube`)                   |
-| Proxy (`--proxy-url`)      | Baked into the binary at build time; not runtime-configurable. Format: `http://host:port` or `socks5://host:port` |
-| Icon                       | Auto-fetched from website if omitted; can be a local path or URL                                                  |
+| Parameter                  | Why it matters                                                                                                      |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| URL                        | The target website                                                                                                  |
+| Name                       | Becomes the `.app` / `.exe` name and productName                                                                    |
+| Bundle ID (`--identifier`) | Defaults to `com.nextbitdeskify.a{md5hash}` — set explicitly for clean installs (e.g. `com.nextbitdeskify.youtube`) |
+| Proxy (`--proxy-url`)      | Baked into the binary at build time; not runtime-configurable. Format: `http://host:port` or `socks5://host:port`   |
+| Icon                       | Auto-fetched from website if omitted; can be a local path or URL                                                    |
 
 ### 2. Handle Icons
 
@@ -81,15 +81,15 @@ After build, confirm:
 
 ### Common Options
 
-| Option                   | Default            | Description                       |
-| ------------------------ | ------------------ | --------------------------------- |
-| `--name <string>`        | —                  | App name                          |
-| `--icon <string>`        | auto-fetch         | Icon path (local file or URL)     |
+| Option                   | Default                      | Description                       |
+| ------------------------ | ---------------------------- | --------------------------------- |
+| `--name <string>`        | —                            | App name                          |
+| `--icon <string>`        | auto-fetch                   | Icon path (local file or URL)     |
 | `--identifier <string>`  | `com.nextbitdeskify.a{hash}` | Bundle ID / app identifier        |
-| `--proxy-url <url>`      | —                  | WebView proxy (http/https/socks5) |
-| `--width <number>`       | 1200               | Window width                      |
-| `--height <number>`      | 780                | Window height                     |
-| `--app-version <string>` | 1.0.0              | App version                       |
+| `--proxy-url <url>`      | —                            | WebView proxy (http/https/socks5) |
+| `--width <number>`       | 1200                         | Window width                      |
+| `--height <number>`      | 780                          | Window height                     |
+| `--app-version <string>` | 1.0.0                        | App version                       |
 
 ### Window Behavior
 

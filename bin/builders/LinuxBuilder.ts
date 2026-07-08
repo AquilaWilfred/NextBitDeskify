@@ -254,7 +254,11 @@ post_remove() {
   }
 
   protected getBuildCommand(packageManager: string = 'pnpm'): string {
-    const configPath = path.join('src-tauri', '.nextbitdeskify', 'tauri.conf.json');
+    const configPath = path.join(
+      'src-tauri',
+      '.nextbitdeskify',
+      'tauri.conf.json',
+    );
 
     const buildTarget =
       this.buildArch === 'arm64'

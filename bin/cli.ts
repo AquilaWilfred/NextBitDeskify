@@ -24,7 +24,9 @@ function printBanner() {
   console.log();
   art.forEach((line) => console.log(navy(line)));
   console.log(cyan(`  NextBitDeskify CLI  •  v${packageJson.version}`));
-  console.log(chalk.gray(`  https://github.com/AquilaWilfred/nextbitdeskify\n`));
+  console.log(
+    chalk.gray(`  https://github.com/AquilaWilfred/nextbitdeskify\n`),
+  );
 }
 
 const program = getCliProgram();

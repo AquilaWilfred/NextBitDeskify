@@ -11,7 +11,11 @@ vi.mock('execa', () => ({
 
 vi.mock('@/utils/dir', () => ({
   npmDirectory: process.cwd(),
-  tauriConfigDirectory: path.join(process.cwd(), 'src-tauri', '.nextbitdeskify'),
+  tauriConfigDirectory: path.join(
+    process.cwd(),
+    'src-tauri',
+    '.nextbitdeskify',
+  ),
 }));
 
 import BaseBuilder from '@/builders/BaseBuilder';
@@ -304,7 +308,9 @@ describe('BaseBuilder guards', () => {
     const command = (builder as any).getBuildCommand('pnpm');
     const normalizedCommand = command.replace(/\\/g, '/');
 
-    expect(normalizedCommand).toContain('src-tauri/.nextbitdeskify/tauri.conf.json');
+    expect(normalizedCommand).toContain(
+      'src-tauri/.nextbitdeskify/tauri.conf.json',
+    );
     expect(command).toContain('--features cli-build');
   });
 
@@ -354,7 +360,9 @@ describe('BaseBuilder guards', () => {
       'utf8',
     );
 
-    expect(buildScript).toContain('cargo:rerun-if-changed=.nextbitdeskify/nextbitdeskify.json');
+    expect(buildScript).toContain(
+      'cargo:rerun-if-changed=.nextbitdeskify/nextbitdeskify.json',
+    );
     expect(buildScript).toContain(
       'cargo:rerun-if-changed=.nextbitdeskify/tauri.conf.json',
     );

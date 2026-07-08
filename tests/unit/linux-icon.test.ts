@@ -10,7 +10,9 @@ import type { NextBitDeskifyAppOptions } from '../../bin/types';
 const tempDirs: string[] = [];
 
 async function makeTempDir() {
-  const tempDir = await fsExtra.mkdtemp(path.join(os.tmpdir(), 'nextbitdeskify-icon-'));
+  const tempDir = await fsExtra.mkdtemp(
+    path.join(os.tmpdir(), 'nextbitdeskify-icon-'),
+  );
   tempDirs.push(tempDir);
   return tempDir;
 }

@@ -78,7 +78,9 @@ class NextBitDeskifyTestRunner {
     }
 
     if (nextbitdeskifyCliTests) {
-      console.log("\n[Package] Running NextBitDeskify-CLI GitHub Actions Tests...");
+      console.log(
+        "\n[Package] Running NextBitDeskify-CLI GitHub Actions Tests...",
+      );
       await this.runNextBitDeskifyCliTests();
       testCount++;
     }
@@ -539,7 +541,11 @@ class NextBitDeskifyTestRunner {
     await this.runTest(
       "Configuration File Verification",
       async () => {
-        const nextbitdeskifyDir = path.join(config.PROJECT_ROOT, "src-tauri", ".nextbitdeskify");
+        const nextbitdeskifyDir = path.join(
+          config.PROJECT_ROOT,
+          "src-tauri",
+          ".nextbitdeskify",
+        );
 
         return new Promise((resolve, reject) => {
           const testName = "GitHubConfigTest";
@@ -558,10 +564,19 @@ class NextBitDeskifyTestRunner {
 
           const checkConfigFiles = () => {
             if (fs.existsSync(nextbitdeskifyDir)) {
-              const configFile = path.join(nextbitdeskifyDir, "tauri.conf.json");
-              const nextbitdeskifyConfigFile = path.join(nextbitdeskifyDir, "nextbitdeskify.json");
+              const configFile = path.join(
+                nextbitdeskifyDir,
+                "tauri.conf.json",
+              );
+              const nextbitdeskifyConfigFile = path.join(
+                nextbitdeskifyDir,
+                "nextbitdeskify.json",
+              );
 
-              if (fs.existsSync(configFile) && fs.existsSync(nextbitdeskifyConfigFile)) {
+              if (
+                fs.existsSync(configFile) &&
+                fs.existsSync(nextbitdeskifyConfigFile)
+              ) {
                 try {
                   const config = JSON.parse(
                     fs.readFileSync(configFile, "utf8"),
@@ -572,7 +587,8 @@ class NextBitDeskifyTestRunner {
 
                   if (
                     config.productName === testName &&
-                    nextbitdeskifyConfig.windows[0].url === "https://github.com/"
+                    nextbitdeskifyConfig.windows[0].url ===
+                      "https://github.com/"
                   ) {
                     child.kill("SIGTERM");
                     this.trackTempDir(nextbitdeskifyDir);
@@ -1470,7 +1486,11 @@ class NextBitDeskifyTestRunner {
       });
 
       // Also clean src-tauri/.nextbitdeskify directory if it exists
-      const nextbitdeskifyDir = path.join(config.PROJECT_ROOT, "src-tauri", ".nextbitdeskify");
+      const nextbitdeskifyDir = path.join(
+        config.PROJECT_ROOT,
+        "src-tauri",
+        ".nextbitdeskify",
+      );
       if (fs.existsSync(nextbitdeskifyDir)) {
         fs.rmSync(nextbitdeskifyDir, { recursive: true, force: true });
       }

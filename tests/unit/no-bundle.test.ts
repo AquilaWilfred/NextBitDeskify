@@ -5,14 +5,22 @@ import { describe, it, expect, vi } from 'vitest';
 // Point it at the repo root so the import chain resolves under vitest.
 vi.mock('@/utils/dir', () => ({
   npmDirectory: process.cwd(),
-  tauriConfigDirectory: path.join(process.cwd(), 'src-tauri', '.nextbitdeskify'),
+  tauriConfigDirectory: path.join(
+    process.cwd(),
+    'src-tauri',
+    '.nextbitdeskify',
+  ),
 }));
 
 import LinuxBuilder from '@/builders/LinuxBuilder';
 import { NextBitDeskifyAppOptions } from '@/types';
 
 const makeBuilder = (bundle: boolean) =>
-  new LinuxBuilder({ name: 'demo', targets: 'deb', bundle } as NextBitDeskifyAppOptions);
+  new LinuxBuilder({
+    name: 'demo',
+    targets: 'deb',
+    bundle,
+  } as NextBitDeskifyAppOptions);
 
 describe('LinuxBuilder --no-bundle', () => {
   it('appends --no-bundle and skips --bundles when bundle is false', () => {

@@ -15,7 +15,9 @@ export class NextBitDeskifyError extends Error {
   }
 }
 
-export function isNextBitDeskifyError(error: unknown): error is NextBitDeskifyError {
+export function isNextBitDeskifyError(
+  error: unknown,
+): error is NextBitDeskifyError {
   return (
     error instanceof NextBitDeskifyError ||
     (typeof error === 'object' &&

@@ -25,7 +25,11 @@ export default class WinBuilder extends BaseBuilder {
   }
 
   protected getBuildCommand(packageManager: string = 'pnpm'): string {
-    const configPath = path.join('src-tauri', '.nextbitdeskify', 'tauri.conf.json');
+    const configPath = path.join(
+      'src-tauri',
+      '.nextbitdeskify',
+      'tauri.conf.json',
+    );
     const buildTarget = this.getTauriTarget(this.buildArch, 'win32');
 
     if (!buildTarget) {

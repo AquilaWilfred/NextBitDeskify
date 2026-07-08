@@ -3,7 +3,9 @@ import { buildWindowConfigOverrides } from '../../bin/helpers/merge';
 import { DEFAULT_PAKE_OPTIONS } from '../../bin/defaults';
 import type { NextBitDeskifyAppOptions } from '../../bin/types';
 
-function makeOptions(overrides: Partial<NextBitDeskifyAppOptions> = {}): NextBitDeskifyAppOptions {
+function makeOptions(
+  overrides: Partial<NextBitDeskifyAppOptions> = {},
+): NextBitDeskifyAppOptions {
   return {
     ...DEFAULT_PAKE_OPTIONS,
     identifier: 'com.nextbitdeskify.test',

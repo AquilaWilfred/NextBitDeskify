@@ -56,7 +56,9 @@ function fakePng(tag: number, length: number): Buffer {
 const tempDirs: string[] = [];
 
 function makeTempDir(): string {
-  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'nextbitdeskify-ico-test-'));
+  const dir = fs.mkdtempSync(
+    path.join(os.tmpdir(), 'nextbitdeskify-ico-test-'),
+  );
   tempDirs.push(dir);
   return dir;
 }

@@ -73,9 +73,9 @@ jobs:
         with:
           mode: build
 
-      - name: Build frontend (required for tauri::generate_context!)
+      - name: Create placeholder frontend dist for clippy
         working-directory: .
-        run: pnpm run build
+        run: mkdir -p dist && echo "<html></html>" > dist/index.html
 
       - name: Install Rust components
         shell: bash

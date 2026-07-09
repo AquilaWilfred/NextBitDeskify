@@ -254,7 +254,6 @@ If NextBitDeskify has been useful to you:
 
 ---
 
-
 ## License
 
 NextBitDeskify is open source under the **MIT License** — see [LICENSE](./LICENSE).

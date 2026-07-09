@@ -201,15 +201,8 @@ The development of NextBitDeskify has been greatly enriched by these contributor
 
 ## Support
 
-- The most direct way to support me is getting [Mole for Mac](https://mole.fit), my paid Mac cleanup app.
 - If NextBitDeskify helped you, give it a star, [share it](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux), or open an issue or PR.
-- I have two cats, TangYuan and Coke. If you think NextBitDeskify delights your life, you can feed them <a href="https://cats.AquilaWilfred.fun?name=NextBitDeskify" target="_blank">canned food 🥩</a>.
 
-<details>
-<summary>These lovely people already did 🐱</summary>
-<br/>
-<a href="https://cats.AquilaWilfred.fun?name=NextBitDeskify"><img src="https://cdn.jsdelivr.net/gh/AquilaWilfred/sponsors@main/assets/sponsors.svg" width="1000" loading="lazy" /></a>
-</details>
 
 ## License
 

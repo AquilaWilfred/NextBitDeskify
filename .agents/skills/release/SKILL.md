@@ -40,6 +40,10 @@ Four files must be updated in sync — never update one without the others:
 ### Tagging (triggers CI)
 
 ```bash
+git add -A
+git commit -m "chore: bump version to VX.X.X"
+git pull
+git push
 git tag -a VX.X.X -m "Release VX.X.X"
 git push origin VX.X.X
 ```
@@ -90,9 +94,6 @@ Fill in the version, the two changelog lists (English + 中文, same items in th
 
 ### Changelog
 
-1. ...
-
-### 更新日志
 
 1. ...
 

@@ -94,7 +94,6 @@ Fill in the version, the two changelog lists (English + 中文, same items in th
 
 ### Changelog
 
-
 1. ...
 
 Special thanks to @user for the reports and PRs behind this release. If NextBitDeskify helps you, please consider giving it a star and recommending it to your friends.

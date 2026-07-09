@@ -203,7 +203,6 @@ The development of NextBitDeskify has been greatly enriched by these contributor
 
 - If NextBitDeskify helped you, give it a star, [share it](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux), or open an issue or PR.
 
-
 ## License
 
 NextBitDeskify is open source under GPL-3.0, see [LICENSE](./LICENSE) and [NextBitDeskify Output Exception](./LICENSE-EXCEPTION); apps you build with NextBitDeskify are entirely yours to use and distribute. If you fork NextBitDeskify into your own product, to avoid confusion please give it a different name and credit NextBitDeskify as the source.

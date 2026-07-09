@@ -65,8 +65,8 @@ export default async function handleOptions(
   }
 
   if (name && !isValidName(name, platform)) {
-    const LINUX_NAME_ERROR = `✕ Name should only include lowercase letters, numbers, and dashes (not leading dashes). Examples: com-123-xxx, 123pan, pan123, weread, we-read, 123.`;
-    const DEFAULT_NAME_ERROR = `✕ Name should only include letters, numbers, dots, dashes, and spaces (not leading dots, dashes, and spaces). Examples: 123pan, 123Pan, Pan123, weread, WeRead, WERead, we-read, We Read, Vectorizer.AI, 123.`;
+    const LINUX_NAME_ERROR = `✕ Name should only include lowercase letters, numbers, and dashes (not leading dashes). Examples: com-123-xxx, 123pan, pan123, nextbitdeskify, next-bit, 123.`;
+    const DEFAULT_NAME_ERROR = `✕ Name should only include letters, numbers, dots, dashes, and spaces (not leading dots, dashes, and spaces). Examples: 123pan, 123Pan, Pan123, nextbitdeskify, NextBitDeskify, NEXTbitdeskify, next-bit, Next Bit, Vectorizer.AI, 123.`;
     const errorMsg =
       platform === 'linux' ? LINUX_NAME_ERROR : DEFAULT_NAME_ERROR;
     if (isActions) {

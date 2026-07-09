@@ -78,36 +78,36 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
 
 <table>
     <tr>
-        <td>WeRead
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/WeRead.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/WeRead_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/WeRead_x86_64.deb">Linux</a>
+        <td>Google
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Google.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Google_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Google_x86_64.deb">Linux</a>
         </td>
-        <td>Twitter
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Twitter.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Twitter_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Twitter_x86_64.deb">Linux</a>
+        <td>Bing
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Bing.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Bing_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Bing_x86_64.deb">Linux</a>
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/WeRead.jpg width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Twitter.jpg width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Google.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Bing.png width=600/></td>
     </tr>
     <tr>
-        <td>Grok
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Grok.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Grok_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Grok_x86_64.deb">Linux</a>
-        </td>
         <td>DeepSeek
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/DeepSeek.dmg">Mac</a>
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/DeepSeek_x64.msi">Windows</a>
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/DeepSeek_x86_64.deb">Linux</a>
         </td>
+        <td>Grok
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Grok.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Grok_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Grok_x86_64.deb">Linux</a>
+        </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Grok.png width=600/></td>
         <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/DeepSeek.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Grok.png width=600/></td>
     </tr>
     <tr>
         <td>ChatGPT
@@ -126,53 +126,85 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Gemini.png width=600/></td>
     </tr>
     <tr>
-      <td>YouTube Music
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTubeMusic.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTubeMusic_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTubeMusic_x86_64.deb">Linux</a>
+      <td>Reddit
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Reddit.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Reddit_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Reddit_x86_64.deb">Linux</a>
       </td>
-      <td>YouTube
+      <td>Kaggle
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Kaggle.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Kaggle_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Kaggle_x86_64.deb">Linux</a>
+      </td>
+    </tr>
+    <tr>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Reddit.png width=600 /></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Kaggle.png width=600 /></td>
+    </tr>
+    <tr>
+        <td>Instagram
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Instagram.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Instagram_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Instagram_x86_64.deb">Linux</a>
+        </td>
+        <td>Facebook
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Facebook.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Facebook_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Facebook_x86_64.deb">Linux</a>
+        </td>
+    </tr>
+    <tr>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Instagram.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Facebook.png width=600/></td>
+    </tr>
+    <tr>
+        <td>LinkedIn
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/LinkedIn.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/LinkedIn_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/LinkedIn_x86_64.deb">Linux</a>
+        </td>
+        <td>X
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/X.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/X_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/X_x86_64.deb">Linux</a>
+        </td>
+    </tr>
+    <tr>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/LinkedIn.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/X.png width=600/></td>
+    </tr>
+    <tr>
+        <td>WhatsApp
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/WhatsApp.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/WhatsApp_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/WhatsApp_x86_64.deb">Linux</a>
+        </td>
+        <td>TikTok
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/TikTok.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/TikTok_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/TikTok_x86_64.deb">Linux</a>
+        </td>
+    </tr>
+    <tr>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/WhatsApp.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/TikTok.png width=600/></td>
+    </tr>
+   <tr>
+        <td>YouTube
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube.dmg">Mac</a>
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube_x64.msi">Windows</a>
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube_x86_64.deb">Linux</a>
-      </td>
-    </tr>
-    <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/YouTubeMusic.png width=600 /></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/YouTube.jpg width=600 /></td>
-    </tr>
-    <tr>
-        <td>LiZhi
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/LiZhi.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/LiZhi_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/LiZhi_x86_64.deb">Linux</a>
         </td>
-        <td>ProgramMusic
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/ProgramMusic.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/ProgramMusic_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/ProgramMusic_x86_64.deb">Linux</a>
+        <td>YouTube Music
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube Music.dmg">Mac</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube Music_x64.msi">Windows</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube Music_x86_64.deb">Linux</a>
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/LiZhi.jpg width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/ProgramMusic.jpg width=600/></td>
-    </tr>
-    <tr>
-        <td>Excalidraw
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Excalidraw.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Excalidraw_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/Excalidraw_x86_64.deb">Linux</a>
-        </td>
-        <td>XiaoHongShu
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/XiaoHongShu.dmg">Mac</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/XiaoHongShu_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/XiaoHongShu_x86_64.deb">Linux</a>
-        </td>
-    </tr>
-    <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Excalidraw.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/XiaoHongShu.png width=600/></td>
-    </tr>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/YouTube.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/YouTube Music.png width=600/></td>
+    </tr>   
 </table>
 
 <details>
@@ -205,7 +237,7 @@ In addition, double-click the title bar to switch to full-screen mode. For Mac u
 
 ## Command-Line Packaging
 
-![NextBitDeskify](https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/nextbitdeskify1.gif)
+![NextBitDeskify](https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/nextbitdeskify1.gif)
 
 ```bash
 # Install the CLI
@@ -215,8 +247,8 @@ pnpm install -g nextbitdeskify-cli
 nextbitdeskify https://github.com --name GitHub
 
 # Advanced usage with custom options
-nextbitdeskify https://weekly.AquilaWilfred.fun --name Weekly \
-  --icon https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns \
+nextbitdeskify https://nextbit-computers.vercel.app --name NextBit Computers \
+  --icon https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/N%20icon.png \
   --width 1200 --height 800 --hide-title-bar
 ```
 
@@ -258,7 +290,7 @@ NextBitDeskify has grown thanks to the people who've contributed code, ideas, an
 If NextBitDeskify has been useful to you:
 
 - ⭐ Star the repo
-- 🐦 [Share it on Twitter](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux)
+- **X** [Share it on Twitter](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux)
 - 🐛 Open an issue or submit a pull request
 
 ---

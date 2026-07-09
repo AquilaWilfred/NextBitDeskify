@@ -1,9 +1,18 @@
 [
   {
-    "name": "wechat",
-    "title": "WeChat",
-    "name_zh": "微信",
-    "url": "https://wx.qq.com/",
+    "name": "google",
+    "title": "Google",
+    "name_zh": "Google",
+    "url": "https://www.google.com/",
+    "incognito": true,
+    "width": 1000,
+    "height": 720
+  },
+  {
+    "name": "bing",
+    "title": "Bing",
+    "name_zh": "Bing",
+    "url": "https://www.bing.com/",
     "incognito": true,
     "width": 1000,
     "height": 720
@@ -21,28 +30,64 @@
     "url": "https://grok.com/"
   },
   {
+    "name": "chatgpt",
+    "title": "ChatGPT",
+    "name_zh": "ChatGPT",
+    "url": "https://chatgpt.com/"
+  },
+  {
     "name": "gemini",
     "title": "Gemini",
     "name_zh": "Gemini",
     "url": "https://gemini.google.com/"
   },
   {
-    "name": "excalidraw",
-    "title": "Excalidraw",
-    "name_zh": "Excalidraw",
-    "url": "https://excalidraw.com/"
+    "name": "reddit",
+    "title": "Reddit",
+    "name_zh": "Reddit",
+    "url": "https://www.reddit.com/"
   },
   {
-    "name": "programmusic",
-    "title": "ProgramMusic",
-    "name_zh": "ProgramMusic",
-    "url": "https://musicforprogramming.net/"
+    "name": "kaggle",
+    "title": "Kaggle",
+    "name_zh": "Kaggle",
+    "url": "https://www.kaggle.com/"
   },
   {
-    "name": "twitter",
-    "title": "Twitter",
-    "name_zh": "推特",
+    "name": "instagram",
+    "title": "Instagram",
+    "name_zh": "Instagram",
+    "url": "https://www.instagram.com/"
+  },
+  {
+    "name": "facebook",
+    "title": "Facebook",
+    "name_zh": "Facebook",
+    "url": "https://www.facebook.com/"
+  },
+  {
+    "name": "linkedin",
+    "title": "LinkedIn",
+    "name_zh": "LinkedIn",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "name": "x",
+    "title": "X",
+    "name_zh": "X",
     "url": "https://x.com/"
+  },
+  {
+    "name": "whatsapp",
+    "title": "WhatsApp",
+    "name_zh": "WhatsApp",
+    "url": "https://www.whatsapp.com/"
+  },
+  {
+    "name": "tiktok",
+    "title": "TikTok",
+    "name_zh": "TikTok",
+    "url": "https://www.tiktok.com/"
   },
   {
     "name": "youtube",
@@ -51,45 +96,9 @@
     "url": "https://www.youtube.com"
   },
   {
-    "name": "chatgpt",
-    "title": "ChatGPT",
-    "name_zh": "ChatGPT",
-    "url": "https://chatgpt.com/"
-  },
-  {
-    "name": "flomo",
-    "title": "Flomo",
-    "name_zh": "浮墨",
-    "url": "https://v.flomoapp.com/mine"
-  },
-  {
-    "name": "qwerty",
-    "title": "Qwerty",
-    "name_zh": "Qwerty",
-    "url": "https://qwerty.kaiyi.cool/"
-  },
-  {
-    "name": "lizhi",
-    "title": "LiZhi",
-    "name_zh": "李志",
-    "url": "https://lizhi.dengdengju.com/?from=nextbitdeskify"
-  },
-  {
-    "name": "xiaohongshu",
-    "title": "XiaoHongShu",
-    "name_zh": "小红书",
-    "url": "https://www.xiaohongshu.com/explore"
-  },
-  {
     "name": "youtubemusic",
     "title": "YouTubeMusic",
     "name_zh": "YouTubeMusic",
     "url": "https://music.youtube.com/"
-  },
-  {
-    "name": "weread",
-    "title": "WeRead",
-    "name_zh": "微信阅读",
-    "url": "https://weread.qq.com/"
   }
 ]

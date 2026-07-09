@@ -19,7 +19,7 @@ const RED = "\x1b[31m";
 const NC = "\x1b[0m";
 
 // Fixed test apps for consistent testing
-const TEST_APPS = ["weread", "twitter"];
+const TEST_APPS = ["kaggle", "reddit"];
 
 class ReleaseBuildTest {
   constructor() {

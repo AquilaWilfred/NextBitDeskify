@@ -246,8 +246,6 @@ NextBitDeskify has grown thanks to the people who've contributed code, ideas, an
 
 ## Support the Project
 
-# <<<<<<< HEAD
-
 If NextBitDeskify has been useful to you:
 
 - ⭐ Star the repo
@@ -256,7 +254,6 @@ If NextBitDeskify has been useful to you:
 
 ---
 
-> > > > > > > d3fb692 (Added objectives to guide me to the next level)
 
 ## License
 

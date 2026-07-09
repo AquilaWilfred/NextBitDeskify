@@ -26,6 +26,11 @@ RUN rustc --version && echo "Rust version verified"
 
 COPY . /nextbitdeskify
 WORKDIR /nextbitdeskify/src-tauri
+
+# Placeholder frontendDist so tauri::generate_context!() doesn't panic during
+# this cargo-only build stage (real dist/ is produced later via pnpm cli:build)
+RUN mkdir -p /nextbitdeskify/dist && echo "<html></html>" > /nextbitdeskify/dist/index.html
+
 # Build cargo packages and store cache
 RUN --mount=type=cache,target=/usr/local/cargo/registry \
     cargo fetch && \

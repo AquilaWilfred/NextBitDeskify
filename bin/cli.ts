@@ -74,7 +74,10 @@ program.action(async (url: string, options: NextBitDeskifyCliOptions) => {
   }
 });
 
-printBanner();
+const isVersionFlag = process.argv.includes('--version') || process.argv.includes('-v');
+if (!isVersionFlag) {
+  printBanner();
+}
 
 program.parseAsync().catch((error: unknown) => {
   if (error instanceof Error) {

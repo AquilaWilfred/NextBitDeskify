@@ -1,6 +1,6 @@
 [package]
 name = "nextbitdeskify"
-version = "3.13.1"
+version = "0.1.0"
 description = "🤱🏻 Turn any webpage into a desktop app with Rust."
 authors = ["AquilaWilfred"]
 license = "GPL-3.0-or-later"

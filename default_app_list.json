@@ -4,6 +4,7 @@
     "title": "Google",
     "name_zh": "Google",
     "url": "https://www.google.com/",
+    "icon": "https://www.google.com/favicon.ico",
     "incognito": true,
     "width": 1000,
     "height": 720
@@ -13,6 +14,7 @@
     "title": "Bing",
     "name_zh": "Bing",
     "url": "https://www.bing.com/",
+    "icon": "https://www.bing.com/favicon.ico",
     "incognito": true,
     "width": 1000,
     "height": 720
@@ -21,84 +23,126 @@
     "name": "deepseek",
     "title": "DeepSeek",
     "name_zh": "DeepSeek",
-    "url": "https://chat.deepseek.com/"
+    "url": "https://chat.deepseek.com/",
+    "icon": "https://chat.deepseek.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "grok",
     "title": "Grok",
     "name_zh": "Grok",
-    "url": "https://grok.com/"
+    "url": "https://grok.com/",
+    "icon": "https://grok.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "chatgpt",
     "title": "ChatGPT",
     "name_zh": "ChatGPT",
-    "url": "https://chatgpt.com/"
+    "url": "https://chatgpt.com/",
+    "icon": "https://chatgpt.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "gemini",
     "title": "Gemini",
     "name_zh": "Gemini",
-    "url": "https://gemini.google.com/"
+    "url": "https://gemini.google.com/",
+    "icon": "https://gemini.google.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "reddit",
     "title": "Reddit",
     "name_zh": "Reddit",
-    "url": "https://www.reddit.com/"
+    "url": "https://www.reddit.com/",
+    "icon": "https://www.reddit.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "kaggle",
     "title": "Kaggle",
     "name_zh": "Kaggle",
-    "url": "https://www.kaggle.com/"
+    "url": "https://www.kaggle.com/",
+    "icon": "https://www.kaggle.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "instagram",
     "title": "Instagram",
     "name_zh": "Instagram",
-    "url": "https://www.instagram.com/"
+    "url": "https://www.instagram.com/",
+    "icon": "https://www.instagram.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "facebook",
     "title": "Facebook",
     "name_zh": "Facebook",
-    "url": "https://www.facebook.com/"
+    "url": "https://www.facebook.com/",
+    "icon": "https://www.facebook.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "linkedin",
     "title": "LinkedIn",
     "name_zh": "LinkedIn",
-    "url": "https://www.linkedin.com/"
+    "url": "https://www.linkedin.com/",
+    "icon": "https://www.linkedin.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "x",
     "title": "X",
     "name_zh": "X",
-    "url": "https://x.com/"
+    "url": "https://x.com/",
+    "icon": "https://abs.twimg.com/favicons/twitter.2.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "whatsapp",
     "title": "WhatsApp",
     "name_zh": "WhatsApp",
-    "url": "https://www.whatsapp.com/"
+    "url": "https://www.whatsapp.com/",
+    "icon": "https://www.whatsapp.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "tiktok",
     "title": "TikTok",
     "name_zh": "TikTok",
-    "url": "https://www.tiktok.com/"
+    "url": "https://www.tiktok.com/",
+    "icon": "https://www.tiktok.com/favicon.ico",
+    "width": 1100,
+    "height": 780
   },
   {
     "name": "youtube",
     "title": "YouTube",
     "name_zh": "YouTube",
-    "url": "https://www.youtube.com"
+    "url": "https://www.youtube.com",
+    "icon": "https://www.youtube.com/favicon.ico",
+    "width": 1180,
+    "height": 820
   },
   {
     "name": "youtubemusic",
     "title": "YouTubeMusic",
     "name_zh": "YouTubeMusic",
-    "url": "https://music.youtube.com/"
+    "url": "https://music.youtube.com/",
+    "icon": "https://music.youtube.com/favicon.ico",
+    "width": 1180,
+    "height": 820
   }
 ]

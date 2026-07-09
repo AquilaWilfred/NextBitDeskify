@@ -34,12 +34,12 @@
 
 Most tools that "wrap" a website into a desktop app rely on Electron — which means bundling an entire copy of Chromium into every install. NextBitDeskify takes a different approach: it's built on **Rust and Tauri**, using your operating system's native webview instead. The result is smaller, faster, and lighter on memory, without giving up the features people expect from a real desktop app.
 
-| | Electron-based tools | NextBitDeskify |
-|---|---|---|
-| Typical install size | 100MB+ | Often under 10MB |
-| Runtime | Bundled Chromium | Native OS webview |
-| Performance | Higher memory use | Lower memory use |
-| Setup | Config-heavy | One command |
+|                      | Electron-based tools | NextBitDeskify    |
+| -------------------- | -------------------- | ----------------- |
+| Typical install size | 100MB+               | Often under 10MB  |
+| Runtime              | Bundled Chromium     | Native OS webview |
+| Performance          | Higher memory use    | Lower memory use  |
+| Setup                | Config-heavy         | One command       |
 
 ---
 
@@ -49,6 +49,7 @@ Most tools that "wrap" a website into a desktop app rely on Electron — which m
 - 🔷 **Fast** — runs on native Rust + Tauri, so it's easier on memory than JS-based wrappers
 - 🔹 **Simple** — one CLI command turns a website into an app, or build it online with zero setup
 - 🛡️ **Complete** — shortcuts, immersive windowing, drag & drop, styling, and ad removal, all included
+
 ---
 
 ## Getting Started
@@ -245,8 +246,8 @@ NextBitDeskify has grown thanks to the people who've contributed code, ideas, an
 
 ## Support the Project
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
+
 If NextBitDeskify has been useful to you:
 
 - ⭐ Star the repo
@@ -255,7 +256,8 @@ If NextBitDeskify has been useful to you:
 
 ---
 
->>>>>>> d3fb692 (Added objectives to guide me to the next level)
+> > > > > > > d3fb692 (Added objectives to guide me to the next level)
+
 ## License
 
 NextBitDeskify is open source under the **MIT License** — see [LICENSE](./LICENSE).

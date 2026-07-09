@@ -11,4 +11,4 @@ if you publish a fork or a derived product, please:
 - Don't imply your product is endorsed by or affiliated with NextBitDeskify.
 - Don't use the NextBitDeskify name to market a paid or competing product.
 
-Permission requests: open an issue at <https://github.com/Aquilawilfred/NextBitDeskify>.
+Permission requests: open an issue at <https://github.com/AquilaWilfred/NextBitDeskify>.

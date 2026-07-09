@@ -8,7 +8,7 @@ Build NextBitDeskify apps online without installing development tools locally.
 
 ### 1. Fork Repository
 
-[Fork this project](https://github.com/Aquilawilfred/NextBitDeskify/fork)
+[Fork this project](https://github.com/AquilaWilfred/NextBitDeskify/fork)
 
 ### 2. Run Workflow
 
@@ -17,7 +17,7 @@ Build NextBitDeskify apps online without installing development tools locally.
 3. Fill in the form (same parameters as [CLI options](cli-usage.md))
 4. Click `Run Workflow`
 
-   ![Actions Interface](https://raw.githubusercontent.com/Aquilawilfred/static/main/nextbitdeskify/action.png)
+   ![Actions Interface](https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/action.png)
 
 ### 3. Download App
 
@@ -25,7 +25,7 @@ Build NextBitDeskify apps online without installing development tools locally.
 - Click the workflow name to view details
 - Find `Artifacts` section and download your app
 
-  ![Build Success](https://raw.githubusercontent.com/Aquilawilfred/static/main/nextbitdeskify/action2.png)
+  ![Build Success](https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/action2.png)
 
 ### 4. Build Times
 

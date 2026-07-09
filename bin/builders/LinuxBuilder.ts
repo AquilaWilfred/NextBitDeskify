@@ -185,7 +185,7 @@ export default class LinuxBuilder extends BaseBuilder {
 pkgbase = ${packageName}
 pkgver = ${version}-1
 pkgdesc = ${name} NextBitDeskify app
-url = https://github.com/Aquilawilfred/NextBitDeskify
+url = https://github.com/AquilaWilfred/NextBitDeskify
 builddate = ${Math.floor(Date.now() / 1000)}
 packager = NextBitDeskify
 size = ${installedSize}

@@ -233,7 +233,7 @@ pub fn handle_menu_click(app_handle: &AppHandle, id: &str) {
         }
         "nextbitdeskify_github_link" => {
             let _ = app_handle.opener().open_url(
-                "https://github.com/Aquilawilfred/NextBitDeskify",
+                "https://github.com/AquilaWilfred/NextBitDeskify",
                 None::<&str>,
             );
         }

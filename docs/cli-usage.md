@@ -45,7 +45,7 @@ source ~/.bashrc
 nextbitdeskify https://github.com --name "GitHub"
 
 # Advanced usage with custom options
-nextbitdeskify https://weekly.Aquilawilfred.fun --name "Weekly" --icon https://cdn.Aquilawilfred.fun/nextbitdeskify/weekly.icns --width 1200 --height 800 --hide-title-bar
+nextbitdeskify https://weekly.AquilaWilfred.fun --name "Weekly" --icon https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns --width 1200 --height 800 --hide-title-bar
 
 # Complete example with multiple options
 nextbitdeskify https://github.com --name "GitHub Desktop" --width 1400 --height 900 --show-system-tray --debug
@@ -75,7 +75,7 @@ Various options are available for customization. `nextbitdeskify --help` shows e
 | Option             | Description                                     | Example                                                           |
 | ------------------ | ----------------------------------------------- | ----------------------------------------------------------------- |
 | `--name`           | Application name                                | `--name "Weekly"`                                                 |
-| `--icon`           | Custom icon (optional, auto-fetch website icon) | `--icon https://cdn.Aquilawilfred.fun/nextbitdeskify/weekly.icns` |
+| `--icon`           | Custom icon (optional, auto-fetch website icon) | `--icon https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns` |
 | `--width`          | Window width (default: 1200px)                  | `--width 1400`                                                    |
 | `--height`         | Window height (default: 780px)                  | `--height 900`                                                    |
 | `--hide-title-bar` | Immersive header (macOS only)                   | `--hide-title-bar`                                                |
@@ -121,7 +121,7 @@ nextbitdeskify https://github.com --name GitHub
 
 # With custom icons
 --icon ./my-icon.png
---icon https://cdn.Aquilawilfred.fun/nextbitdeskify/weekly.icns  # Remote icon (.icns for macOS)
+--icon https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns  # Remote icon (.icns for macOS)
 ```
 
 #### [height]
@@ -612,7 +612,7 @@ docker run --rm --privileged \
     --device /dev/fuse \
     --security-opt apparmor=unconfined \
     -v YOUR_DIR:/output \
-    ghcr.io/Aquilawilfred/nextbitdeskify \
+    ghcr.io/AquilaWilfred/nextbitdeskify \
     <arguments>
 
 # For example:
@@ -620,6 +620,6 @@ docker run --rm --privileged \
     --device /dev/fuse \
     --security-opt apparmor=unconfined \
     -v ./packages:/output \
-    ghcr.io/Aquilawilfred/nextbitdeskify \
+    ghcr.io/AquilaWilfred/nextbitdeskify \
     https://example.com --name myapp --icon ./icon.png --targets appimage
 ```

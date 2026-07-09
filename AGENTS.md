@@ -153,7 +153,7 @@ Pushing a `V*` tag triggers `.github/workflows/release.yml`:
 
 The workflow can also be triggered manually via `workflow_dispatch` with options to build popular apps or publish Docker independently.
 
-Pushing the same `V*` tag also triggers `.github/workflows/npm-publish.yml`, which publishes `nextbitdeskify-cli` to npm through Trusted Publishing. Configure the npm package's Trusted Publisher as GitHub Actions, `Aquilawilfred/NextBitDeskify`, workflow file `npm-publish.yml`, with no environment. Local `npm publish` is only a fallback when CI or npm registry state blocks the trusted path.
+Pushing the same `V*` tag also triggers `.github/workflows/npm-publish.yml`, which publishes `nextbitdeskify-cli` to npm through Trusted Publishing. Configure the npm package's Trusted Publisher as GitHub Actions, `AquilaWilfred/NextBitDeskify`, workflow file `npm-publish.yml`, with no environment. Local `npm publish` is only a fallback when CI or npm registry state blocks the trusted path.
 
 Before treating an npm release as shipped, verify both `gh workflow list --all | grep "Publish npm Package"` and `npm view nextbitdeskify-cli@X.Y.Z version`. Prefer `npm view nextbitdeskify-cli@X.Y.Z version gitHead dist.tarball --json` so the published package can be tied back to the intended commit. Do not reply to or close GitHub issues as released until the public registry returns the expected version.
 
@@ -185,7 +185,7 @@ pnpm install -g nextbitdeskify-cli
 nextbitdeskify https://github.com --name GitHub
 
 # Advanced usage
-nextbitdeskify https://weekly.Aquilawilfred.fun --name Weekly --width 1200 --height 800
+nextbitdeskify https://weekly.AquilaWilfred.fun --name Weekly --width 1200 --height 800
 ```
 
 ## Troubleshooting

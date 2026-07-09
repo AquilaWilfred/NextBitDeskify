@@ -243,7 +243,7 @@ sudo apt install libdbus-1-dev \
 
 ```bash
 # Clone the repository
-git clone https://github.com/Aquilawilfred/NextBitDeskify.git
+git clone https://github.com/AquilaWilfred/NextBitDeskify.git
 cd NextBitDeskify
 
 # Install dependencies
@@ -341,4 +341,4 @@ If you only want the release workflow smoke test, run `node ./tests/release.js` 
 ## Links
 
 - [CLI Documentation](cli-usage.md)
-- [GitHub Discussions](https://github.com/Aquilawilfred/NextBitDeskify/discussions)
+- [GitHub Discussions](https://github.com/AquilaWilfred/NextBitDeskify/discussions)

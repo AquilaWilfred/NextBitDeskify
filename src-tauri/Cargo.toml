@@ -2,9 +2,9 @@
 name = "nextbitdeskify"
 version = "3.13.1"
 description = "🤱🏻 Turn any webpage into a desktop app with Rust."
-authors = ["Aquilawilfred"]
+authors = ["AquilaWilfred"]
 license = "GPL-3.0-or-later"
-repository = "https://github.com/Aquilawilfred/NextBitDeskify"
+repository = "https://github.com/AquilaWilfred/NextBitDeskify"
 edition = "2021"
 rust-version = "1.85.0"
 

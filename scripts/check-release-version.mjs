@@ -82,7 +82,7 @@ expectEqual(
 expectEqual(
   "package.json repository.url",
   packageJson.repository?.url,
-  "git+https://github.com/Aquilawilfred/NextBitDeskify.git",
+  "git+https://github.com/AquilaWilfred/NextBitDeskify.git",
 );
 
 if (!packageJson.files?.includes("LICENSE-EXCEPTION")) {

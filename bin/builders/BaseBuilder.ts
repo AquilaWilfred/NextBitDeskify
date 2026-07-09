@@ -47,7 +47,7 @@ const APPIMAGE_FAILURE_GUIDANCE =
   '  • Running in Docker/container: AppImage needs /dev/fuse:\n' +
   '      --privileged --device /dev/fuse --security-opt apparmor=unconfined\n\n' +
   'Still stuck? Build a DEB instead: nextbitdeskify <url> --targets deb\n' +
-  'Detailed guide: https://github.com/Aquilawilfred/NextBitDeskify/blob/main/docs/faq.md\n' +
+  'Detailed guide: https://github.com/AquilaWilfred/NextBitDeskify/blob/main/docs/faq.md\n' +
   APPIMAGE_BAR;
 
 export default abstract class BaseBuilder {

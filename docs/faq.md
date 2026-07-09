@@ -223,7 +223,7 @@ docker run --rm --privileged \
   --device /dev/fuse \
   --security-opt apparmor=unconfined \
   -v $(pwd)/output:/output \
-  ghcr.io/Aquilawilfred/nextbitdeskify:latest \
+  ghcr.io/AquilaWilfred/nextbitdeskify:latest \
   https://example.com --name MyApp --targets appimage
 ```
 
@@ -273,7 +273,7 @@ docker run --rm --privileged \
   --device /dev/fuse \
   --security-opt apparmor=unconfined \
   -v $(pwd)/output:/output \
-  ghcr.io/Aquilawilfred/nextbitdeskify:latest \
+  ghcr.io/AquilaWilfred/nextbitdeskify:latest \
   https://example.com --name MyApp --targets appimage
 ```
 
@@ -586,8 +586,8 @@ If your issue isn't covered here:
 
 1. Check the [CLI Usage Guide](cli-usage.md) for detailed parameter documentation
 2. See [Advanced Usage](advanced-usage.md) for prerequisites and system setup
-3. Search [existing GitHub issues](https://github.com/Aquilawilfred/NextBitDeskify/issues)
-4. [Open a new issue](https://github.com/Aquilawilfred/NextBitDeskify/issues/new) with:
+3. Search [existing GitHub issues](https://github.com/AquilaWilfred/NextBitDeskify/issues)
+4. [Open a new issue](https://github.com/AquilaWilfred/NextBitDeskify/issues/new) with:
    - Your OS and version
    - Node.js and Rust versions (`node --version`, `rustc --version`)
    - Complete error message

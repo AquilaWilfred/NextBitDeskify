@@ -15,7 +15,7 @@ describe('getDomain', () => {
   });
 
   it('strips an arbitrary subdomain down to the registrable SLD', () => {
-    expect(getDomain('https://weekly.Aquilawilfred.fun')).toBe('Aquilawilfred');
+    expect(getDomain('https://weekly.AquilaWilfred.fun')).toBe('AquilaWilfred');
   });
 
   it('handles multi-part public suffixes via PSL', () => {

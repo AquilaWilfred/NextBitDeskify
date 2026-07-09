@@ -1,6 +1,6 @@
 ## How to contribute to NextBitDeskify
 
-**Welcome to create [pull requests](https://github.com/Aquilawilfred/NextBitDeskify/compare/) for bugfix, new component, doc, example, suggestion and anything.**
+**Welcome to create [pull requests](https://github.com/AquilaWilfred/NextBitDeskify/compare/) for bugfix, new component, doc, example, suggestion and anything.**
 
 ## Branch Management
 
@@ -21,7 +21,7 @@ All development happens directly on `main`. Submit pull requests to `main`.
 
 ```bash
 # Clone the repository
-git clone https://github.com/Aquilawilfred/NextBitDeskify.git
+git clone https://github.com/AquilaWilfred/NextBitDeskify.git
 cd NextBitDeskify
 
 # Install dependencies

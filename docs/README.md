@@ -17,7 +17,7 @@ Welcome to NextBitDeskify documentation! Here you'll find comprehensive guides a
 
 ## Quick Links
 
-- [Main Repository](https://github.com/Aquilawilfred/NextBitDeskify)
-- [Releases](https://github.com/Aquilawilfred/NextBitDeskify/releases)
-- [Discussions](https://github.com/Aquilawilfred/NextBitDeskify/discussions)
-- [Issues](https://github.com/Aquilawilfred/NextBitDeskify/issues)
+- [Main Repository](https://github.com/AquilaWilfred/NextBitDeskify)
+- [Releases](https://github.com/AquilaWilfred/NextBitDeskify/releases)
+- [Discussions](https://github.com/AquilaWilfred/NextBitDeskify/discussions)
+- [Issues](https://github.com/AquilaWilfred/NextBitDeskify/issues)

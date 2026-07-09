@@ -21,7 +21,7 @@ export const TIMEOUTS = {
 
 // Test URLs for different scenarios
 export const TEST_URLS = {
-  WEEKLY: "https://weekly.Aquilawilfred.fun",
+  WEEKLY: "https://weekly.AquilaWilfred.fun",
   VALID: "https://example.com",
   GITHUB: "https://github.com",
   GOOGLE: "https://www.google.com",
@@ -31,7 +31,7 @@ export const TEST_URLS = {
 
 // Test assets for different scenarios
 export const TEST_ASSETS = {
-  WEEKLY_ICNS: "https://cdn.Aquilawilfred.fun/nextbitdeskify/weekly.icns",
+  WEEKLY_ICNS: "https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns",
   INVALID_ICON: "https://example.com/nonexistent.icns",
 };
 

@@ -73,6 +73,10 @@ jobs:
         with:
           mode: build
 
+      - name: Build frontend (required for tauri::generate_context!)
+        working-directory: .
+        run: pnpm run build
+
       - name: Install Rust components
         shell: bash
         run: rustup component add rustfmt clippy

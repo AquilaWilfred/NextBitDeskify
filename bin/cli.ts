@@ -74,7 +74,8 @@ program.action(async (url: string, options: NextBitDeskifyCliOptions) => {
   }
 });
 
-const isVersionFlag = process.argv.includes('--version') || process.argv.includes('-v');
+const isVersionFlag =
+  process.argv.includes('--version') || process.argv.includes('-v');
 if (!isVersionFlag) {
   printBanner();
 }

@@ -20,7 +20,7 @@ export default class MacBuilder extends BaseBuilder {
       options.targets === 'app' ||
       options.iterativeBuild ||
       options.install ||
-      process.env.PAKE_CREATE_APP === '1'
+      process.env.NEXTBITDESKIFY_CREATE_APP === '1'
     ) {
       this.buildFormat = 'app';
     } else {

@@ -281,14 +281,14 @@ post_remove() {
       fullCommand += ` --bundles ${this.currentBuildType}`;
     }
 
-    // Enable verbose output for AppImage builds when debugging or PAKE_VERBOSE is set.
+    // Enable verbose output for AppImage builds when debugging or NEXTBITDESKIFY_VERBOSE is set.
     // AppImage builds often fail with minimal error messages from linuxdeploy,
     // so verbose mode helps diagnose issues like strip failures and missing dependencies.
     if (
       this.currentBuildType === 'appimage' &&
       (this.options.targets.includes('appimage') ||
         this.options.debug ||
-        process.env.PAKE_VERBOSE)
+        process.env.NEXTBITDESKIFY_VERBOSE)
     ) {
       fullCommand += ' --verbose';
     }

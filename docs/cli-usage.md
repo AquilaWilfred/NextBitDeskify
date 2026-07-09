@@ -60,7 +60,7 @@ nextbitdeskify [url] [options]
 
 The packaged application will be located in the current working directory by default. The first packaging might take some time due to environment configuration. Please be patient.
 
-> **macOS Output**: On macOS, NextBitDeskify creates DMG installers by default. To create `.app` bundles for testing (to avoid user interaction), set the environment variable `PAKE_CREATE_APP=1`. If you want NextBitDeskify to install the app directly into `/Applications`, use `--install`, which builds an `.app`, copies it into `/Applications`, and removes the local bundle after a successful install.
+> **macOS Output**: On macOS, NextBitDeskify creates DMG installers by default. To create `.app` bundles for testing (to avoid user interaction), set the environment variable `NEXTBITDESKIFY_CREATE_APP=1`. If you want NextBitDeskify to install the app directly into `/Applications`, use `--install`, which builds an `.app`, copies it into `/Applications`, and removes the local bundle after a successful install.
 >
 > **Note**: Packaging requires the Rust environment. If Rust is not installed, you will be prompted for installation confirmation. In case of installation failure or timeout, you can [install it manually](https://www.rust-lang.org/tools/install).
 

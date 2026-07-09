@@ -11,7 +11,7 @@ use std::time::Duration;
 
 const WINDOW_SHOW_DELAY: u64 = 50;
 #[cfg(target_os = "linux")]
-const PAKE_LINUX_WEBKIT_SAFE_MODE: &str = "PAKE_LINUX_WEBKIT_SAFE_MODE";
+const NEXTBITDESKIFY_LINUX_WEBKIT_SAFE_MODE: &str = "NEXTBITDESKIFY_LINUX_WEBKIT_SAFE_MODE";
 #[cfg(target_os = "linux")]
 const WEBKIT_DISABLE_DMABUF_RENDERER: &str = "WEBKIT_DISABLE_DMABUF_RENDERER";
 #[cfg(target_os = "linux")]
@@ -98,7 +98,7 @@ fn apply_linux_gdk_backend() {
 
 #[cfg(target_os = "linux")]
 fn apply_linux_webkit_runtime_flags() {
-    let safe_mode = std::env::var(PAKE_LINUX_WEBKIT_SAFE_MODE).ok();
+    let safe_mode = std::env::var(NEXTBITDESKIFY_LINUX_WEBKIT_SAFE_MODE).ok();
     if safe_mode.as_deref().is_some_and(is_disabled_env_value) {
         std::env::remove_var(WEBKIT_DISABLE_DMABUF_RENDERER);
         std::env::remove_var(WEBKIT_DISABLE_COMPOSITING_MODE);

@@ -1,8 +1,8 @@
 (function () {
-  if (window.__PAKE_FIND_SCRIPT__) {
+  if (window.__NEXTBITDESKIFY_FIND_SCRIPT__) {
     return;
   }
-  window.__PAKE_FIND_SCRIPT__ = true;
+  window.__NEXTBITDESKIFY_FIND_SCRIPT__ = true;
 
   const PANEL_ID = "nextbitdeskify-find-panel";
   const STYLE_ID = "nextbitdeskify-find-style";

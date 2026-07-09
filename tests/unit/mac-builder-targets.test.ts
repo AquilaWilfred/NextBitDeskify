@@ -19,11 +19,11 @@ const makeBuilder = (targets?: string) =>
   new MacBuilder({ name: 'Demo', targets } as NextBitDeskifyAppOptions);
 
 describe('MacBuilder target selection', () => {
-  // The CI fast-test step runs with PAKE_CREATE_APP=1, which forces the macOS
+  // The CI fast-test step runs with NEXTBITDESKIFY_CREATE_APP=1, which forces the macOS
   // build format to `app` and strips the DMG name suffix. Clear it so these
   // DMG-naming assertions stay deterministic regardless of the ambient env.
   beforeEach(() => {
-    vi.stubEnv('PAKE_CREATE_APP', '');
+    vi.stubEnv('NEXTBITDESKIFY_CREATE_APP', '');
   });
 
   afterEach(() => {

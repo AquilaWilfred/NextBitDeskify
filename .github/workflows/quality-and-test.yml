@@ -126,7 +126,7 @@ jobs:
 
       - name: Run Fast Test Suite
         shell: bash
-        run: PAKE_CREATE_APP=1 node tests/index.js --no-build
+        run: NEXTBITDESKIFY_CREATE_APP=1 node tests/index.js --no-build
         timeout-minutes: 15
         env:
           CI: true
@@ -137,9 +137,9 @@ jobs:
         run: |
           echo "Testing CLI integration..."
           if [[ "$RUNNER_OS" == "Windows" ]]; then
-            timeout 60s PAKE_CREATE_APP=1 node dist/cli.js https://weekly.AquilaWilfred.fun --name "CITest" --debug --iterative-build || true
+            timeout 60s NEXTBITDESKIFY_CREATE_APP=1 node dist/cli.js https://weekly.AquilaWilfred.fun --name "CITest" --debug --iterative-build || true
           else
-            timeout 30s PAKE_CREATE_APP=1 node dist/cli.js https://weekly.AquilaWilfred.fun --name "CITest" --debug --iterative-build || true
+            timeout 30s NEXTBITDESKIFY_CREATE_APP=1 node dist/cli.js https://weekly.AquilaWilfred.fun --name "CITest" --debug --iterative-build || true
           fi
 
   # Full lane: only runs after merge to main (push event) or manual dispatch.

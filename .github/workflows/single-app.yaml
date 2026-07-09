@@ -89,17 +89,17 @@ on:
         required: false
         default: 780
     secrets:
-      PAKE_SIGNING_IDENTITY:
+      NEXTBITDESKIFY_SIGNING_IDENTITY:
         required: false
-      PAKE_CERTIFICATE_P12:
+      NEXTBITDESKIFY_CERTIFICATE_P12:
         required: false
-      PAKE_CERTIFICATE_PASSWORD:
+      NEXTBITDESKIFY_CERTIFICATE_PASSWORD:
         required: false
-      PAKE_NOTARIZE_APPLE_ID:
+      NEXTBITDESKIFY_NOTARIZE_APPLE_ID:
         required: false
-      PAKE_NOTARIZE_TEAM_ID:
+      NEXTBITDESKIFY_NOTARIZE_TEAM_ID:
         required: false
-      PAKE_NOTARIZE_PASSWORD:
+      NEXTBITDESKIFY_NOTARIZE_PASSWORD:
         required: false
 
 jobs:
@@ -152,15 +152,15 @@ jobs:
       - name: Prepare macOS signing
         if: matrix.os == 'macos-latest'
         env:
-          PAKE_SIGNING_IDENTITY: ${{ secrets.PAKE_SIGNING_IDENTITY }}
-          PAKE_CERTIFICATE_P12: ${{ secrets.PAKE_CERTIFICATE_P12 }}
-          PAKE_CERTIFICATE_PASSWORD: ${{ secrets.PAKE_CERTIFICATE_PASSWORD }}
+          NEXTBITDESKIFY_SIGNING_IDENTITY: ${{ secrets.NEXTBITDESKIFY_SIGNING_IDENTITY }}
+          NEXTBITDESKIFY_CERTIFICATE_P12: ${{ secrets.NEXTBITDESKIFY_CERTIFICATE_P12 }}
+          NEXTBITDESKIFY_CERTIFICATE_PASSWORD: ${{ secrets.NEXTBITDESKIFY_CERTIFICATE_PASSWORD }}
         run: |
           set -euo pipefail
 
-          SIGNING_IDENTITY="${PAKE_SIGNING_IDENTITY:-}"
+          SIGNING_IDENTITY="${NEXTBITDESKIFY_SIGNING_IDENTITY:-}"
 
-          if [ -n "${PAKE_CERTIFICATE_P12:-}" ] && [ -n "${PAKE_CERTIFICATE_PASSWORD:-}" ]; then
+          if [ -n "${NEXTBITDESKIFY_CERTIFICATE_P12:-}" ] && [ -n "${NEXTBITDESKIFY_CERTIFICATE_PASSWORD:-}" ]; then
             echo "Importing macOS signing certificate..."
             KEYCHAIN_PATH="$RUNNER_TEMP/app-signing.keychain-db"
             KEYCHAIN_PASSWORD="$(openssl rand -base64 16)"
@@ -169,8 +169,8 @@ jobs:
             security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
             security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
 
-            echo "$PAKE_CERTIFICATE_P12" | base64 --decode > "$RUNNER_TEMP/certificate.p12"
-            security import "$RUNNER_TEMP/certificate.p12" -P "$PAKE_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+            echo "$NEXTBITDESKIFY_CERTIFICATE_P12" | base64 --decode > "$RUNNER_TEMP/certificate.p12"
+            security import "$RUNNER_TEMP/certificate.p12" -P "$NEXTBITDESKIFY_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
             security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
             security list-keychain -d user -s "$KEYCHAIN_PATH"
 
@@ -299,13 +299,13 @@ jobs:
       - name: Notarize macOS DMG
         if: matrix.os == 'macos-latest'
         env:
-          PAKE_NOTARIZE_APPLE_ID: ${{ secrets.PAKE_NOTARIZE_APPLE_ID }}
-          PAKE_NOTARIZE_TEAM_ID: ${{ secrets.PAKE_NOTARIZE_TEAM_ID }}
-          PAKE_NOTARIZE_PASSWORD: ${{ secrets.PAKE_NOTARIZE_PASSWORD }}
+          NEXTBITDESKIFY_NOTARIZE_APPLE_ID: ${{ secrets.NEXTBITDESKIFY_NOTARIZE_APPLE_ID }}
+          NEXTBITDESKIFY_NOTARIZE_TEAM_ID: ${{ secrets.NEXTBITDESKIFY_NOTARIZE_TEAM_ID }}
+          NEXTBITDESKIFY_NOTARIZE_PASSWORD: ${{ secrets.NEXTBITDESKIFY_NOTARIZE_PASSWORD }}
         run: |
           set -euo pipefail
 
-          if [ -z "${PAKE_NOTARIZE_APPLE_ID:-}" ] || [ -z "${PAKE_NOTARIZE_TEAM_ID:-}" ] || [ -z "${PAKE_NOTARIZE_PASSWORD:-}" ]; then
+          if [ -z "${NEXTBITDESKIFY_NOTARIZE_APPLE_ID:-}" ] || [ -z "${NEXTBITDESKIFY_NOTARIZE_TEAM_ID:-}" ] || [ -z "${NEXTBITDESKIFY_NOTARIZE_PASSWORD:-}" ]; then
             echo "Notarization secrets not configured, skipping notarization."
             exit 0
           fi
@@ -318,9 +318,9 @@ jobs:
 
           echo "Submitting DMG to Apple notarization service..."
           xcrun notarytool submit "$DMG_PATH" \
-            --apple-id "$PAKE_NOTARIZE_APPLE_ID" \
-            --team-id "$PAKE_NOTARIZE_TEAM_ID" \
-            --password "$PAKE_NOTARIZE_PASSWORD" \
+            --apple-id "$NEXTBITDESKIFY_NOTARIZE_APPLE_ID" \
+            --team-id "$NEXTBITDESKIFY_NOTARIZE_TEAM_ID" \
+            --password "$NEXTBITDESKIFY_NOTARIZE_PASSWORD" \
             --wait
 
           echo "Stapling notarization ticket..."

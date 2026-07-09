@@ -73,7 +73,7 @@ class ReleaseBuildTest {
         execSync(cmd, {
           stdio: "pipe",
           timeout: 480000, // 8 minutes
-          env: { ...process.env, PAKE_CREATE_APP: "1" },
+          env: { ...process.env, NEXTBITDESKIFY_CREATE_APP: "1" },
         });
 
         // Check files immediately after build
@@ -97,7 +97,7 @@ class ReleaseBuildTest {
   findOutputFiles(appName) {
     const files = [];
 
-    // Check for direct output files (created by PAKE_CREATE_APP=1)
+    // Check for direct output files (created by NEXTBITDESKIFY_CREATE_APP=1)
     const directPatterns = [
       `${appName}.dmg`,
       `${appName}.app`,

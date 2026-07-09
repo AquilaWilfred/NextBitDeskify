@@ -1,7 +1,7 @@
 import { NextBitDeskifyCliOptions } from './types.js';
 import { getDefaultLinuxTargets } from './utils/platform.js';
 
-export const DEFAULT_PAKE_OPTIONS: NextBitDeskifyCliOptions = {
+export const DEFAULT_NEXTBITDESKIFY_OPTIONS: NextBitDeskifyCliOptions = {
   icon: '',
   height: 780,
   width: 1200,

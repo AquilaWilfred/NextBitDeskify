@@ -1,7 +1,7 @@
 {
   "name": "nextbitdeskify-cli",
   "version": "0.1.0",
-  "description": "🤱🏻 Turn any webpage into a desktop app with one command. 🤱🏻 一键打包网页生成轻量桌面应用。",
+  "description": "🤱🏻 Turn any webpage into a desktop app with one command.",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Aquilawilfred/NextBitDeskify.git"
   },
   "author": {
-    "name": "Aquilawilfred",
+    "name": "Aquila Wilfred",
     "email": "wilfredaquila@gmail.com"
   },
   "keywords": [
@@ -41,7 +41,7 @@
     "cli": "cross-env NODE_ENV=development rollup -c -w",
     "cli:dev": "cross-env NODE_ENV=development rollup -c -w",
     "cli:build": "cross-env NODE_ENV=production rollup -c",
-    "test": "pnpm run cli:build && cross-env PAKE_CREATE_APP=1 node tests/index.js",
+    "test": "pnpm run cli:build && cross-env NEXTBITDESKIFY_CREATE_APP=1 node tests/index.js",
     "format": "prettier --write . --ignore-unknown && find tests -name '*.js' -exec sed -i '' 's/[[:space:]]*$//' {} \\; && cd src-tauri && cargo fmt --verbose",
     "format:check": "prettier --check . --ignore-unknown",
     "release:check": "node scripts/check-release-version.mjs && pnpm run format:check && npx vitest run && pnpm run cli:build && npm pack --dry-run --ignore-scripts",

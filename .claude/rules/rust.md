@@ -23,7 +23,7 @@
 
 ### Network mirrors
 
-- CN mirror switching is **explicit opt-in** via `PAKE_USE_CN_MIRROR=1`. Do not reintroduce automatic CN-domain detection.
+- CN mirror switching is **explicit opt-in** via `NEXTBITDESKIFY_USE_CN_MIRROR=1`. Do not reintroduce automatic CN-domain detection.
 - Behavior owners: `bin/utils/mirror.ts` and `bin/builders/BaseBuilder.ts`. Keep docs and tests aligned.
 
 ### dist/cli.js

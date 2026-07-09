@@ -4,7 +4,7 @@ import fsExtra from 'fs-extra';
 import sharp from 'sharp';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { DEFAULT_PAKE_OPTIONS } from '../../bin/defaults';
+import { DEFAULT_NEXTBITDESKIFY_OPTIONS } from '../../bin/defaults';
 import type { NextBitDeskifyAppOptions } from '../../bin/types';
 
 const tempDirs: string[] = [];
@@ -45,7 +45,7 @@ async function importLinuxIconModule() {
 
 function makeOptions(icon: string): NextBitDeskifyAppOptions {
   return {
-    ...DEFAULT_PAKE_OPTIONS,
+    ...DEFAULT_NEXTBITDESKIFY_OPTIONS,
     identifier: 'com.nextbitdeskify.test',
     name: 'Linux App',
     icon,

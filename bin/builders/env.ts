@@ -167,7 +167,7 @@ function isGeneratedCnMirrorConfig(
 
 /**
  * Toggles `.cargo/config.toml` to point at rsproxy.cn when the user opts in
- * via `PAKE_USE_CN_MIRROR=1`, and removes the auto-generated mirror config
+ * via `NEXTBITDESKIFY_USE_CN_MIRROR=1`, and removes the auto-generated mirror config
  * (or warns about a manual one) when they opt out.
  */
 export async function configureCargoRegistry(

@@ -448,8 +448,8 @@ class NextBitDeskifyTestRunner {
             stdio: ["pipe", "pipe", "pipe"],
             env: {
               ...process.env,
-              PAKE_E2E_TEST: "1",
-              PAKE_CREATE_APP: "1",
+              NEXTBITDESKIFY_E2E_TEST: "1",
+              NEXTBITDESKIFY_CREATE_APP: "1",
             },
           });
 
@@ -557,8 +557,8 @@ class NextBitDeskifyTestRunner {
             stdio: ["pipe", "pipe", "pipe"],
             env: {
               ...process.env,
-              PAKE_E2E_TEST: "1",
-              PAKE_CREATE_APP: "1",
+              NEXTBITDESKIFY_E2E_TEST: "1",
+              NEXTBITDESKIFY_CREATE_APP: "1",
             },
           });
 
@@ -781,7 +781,7 @@ class NextBitDeskifyTestRunner {
             stdio: ["pipe", "pipe", "pipe"],
             env: {
               ...process.env,
-              PAKE_CREATE_APP: "1",
+              NEXTBITDESKIFY_CREATE_APP: "1",
             },
           });
 
@@ -961,7 +961,7 @@ class NextBitDeskifyTestRunner {
             stdio: ["pipe", "pipe", "pipe"],
             env: {
               ...process.env,
-              PAKE_CREATE_APP: "1",
+              NEXTBITDESKIFY_CREATE_APP: "1",
               HDIUTIL_QUIET: "1",
               HDIUTIL_NO_AUTOOPEN: "1",
             },
@@ -1584,7 +1584,7 @@ Examples:
 Environment:
   CI=1              # Enable CI mode
   DEBUG=1           # Enable debug output
-  PAKE_CREATE_APP=1 # Allow app creation in tests
+  NEXTBITDESKIFY_CREATE_APP=1 # Allow app creation in tests
 `);
   process.exit(0);
 }

@@ -170,7 +170,7 @@ For release follow-through, keep these boundaries explicit:
 
 NextBitDeskify uses official npm and Rust sources by default. CN mirrors are explicit opt-in only:
 
-- Set `PAKE_USE_CN_MIRROR=1` only when the user or CI environment intentionally wants npmmirror/rsProxy.
+- Set `NEXTBITDESKIFY_USE_CN_MIRROR=1` only when the user or CI environment intentionally wants npmmirror/rsProxy.
 - Do not reintroduce automatic China-domain mirror switching.
 - If an install fails against a CN mirror, retry the same install command to separate network availability from a product regression.
 - `bin/utils/mirror.ts` and `bin/builders/BaseBuilder.ts` own this behavior; keep docs and tests aligned when changing it.

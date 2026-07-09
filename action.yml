@@ -84,7 +84,7 @@ runs:
 
         # Create output directory
         mkdir -p "${{ inputs.output-dir }}"
-        export PAKE_CREATE_APP=1
+        export NEXTBITDESKIFY_CREATE_APP=1
 
         # Run NextBitDeskify CLI
         echo "🔧 Running: node dist/cli.js ${ARGS[*]}"

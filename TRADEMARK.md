@@ -1,6 +1,6 @@
 # Trademark Policy
 
-"NextBitDeskify" and the NextBitDeskify logo are trademarks of the NextBitDeskify project (Aquilawilfred). The code
+"NextBitDeskify" and the NextBitDeskify logo are trademarks of the NextBitDeskify project. The code
 license covers the code, not the brand. Open source licenses grant copyright,
 not trademark.
 

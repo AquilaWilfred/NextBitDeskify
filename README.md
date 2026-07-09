@@ -193,7 +193,7 @@ For style customization, feature enhancement, container communication and other 
 
 ## Developers
 
-NextBitDeskify's development can not be without these Hackers. They contributed a lot of capabilities for NextBitDeskify. Also, welcome to follow them! ❤️
+The development of NextBitDeskify has been greatly enriched by these contributors. Their work has added vital capabilities, and we encourage you to connect with them. ❤️
 
 <a href="https://github.com/Aquilawilfred/NextBitDeskify/graphs/contributors">
   <img src="./CONTRIBUTORS.svg?v=2" alt="Contributors" width="1000" />

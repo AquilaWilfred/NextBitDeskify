@@ -6,8 +6,8 @@
 // Split out from component.js so a future CLI flag (or custom.js override)
 // can short-circuit the polyfill for apps that don't need video fullscreen.
 (function () {
-  if (window.__PAKE_FULLSCREEN_POLYFILL__) return;
-  window.__PAKE_FULLSCREEN_POLYFILL__ = true;
+  if (window.__NEXTBITDESKIFY_FULLSCREEN_POLYFILL__) return;
+  window.__NEXTBITDESKIFY_FULLSCREEN_POLYFILL__ = true;
 
   function initFullscreenPolyfill() {
     if (!window.__TAURI__ || !document.head) {

@@ -298,17 +298,17 @@ On some pure Wayland compositors, especially niri, the AppImage can open but pag
 NextBitDeskify automatically avoids the conservative WebKit rendering flags in niri sessions. To force the same native WebKit path manually, launch the app with:
 
 ```bash
-PAKE_LINUX_WEBKIT_SAFE_MODE=0 ./MyApp.AppImage
+NEXTBITDESKIFY_LINUX_WEBKIT_SAFE_MODE=0 ./MyApp.AppImage
 ```
 
 If your system shows a blank window instead, re-enable the conservative WebKit workaround:
 
 ```bash
-PAKE_LINUX_WEBKIT_SAFE_MODE=1 ./MyApp.AppImage
+NEXTBITDESKIFY_LINUX_WEBKIT_SAFE_MODE=1 ./MyApp.AppImage
 ```
 
 **Why This Happens:**
-NextBitDeskify normally enables WebKitGTK workarounds that help blank-window cases on Linux, but those same flags can make input and window controls unreliable on some Wayland compositors. The `PAKE_LINUX_WEBKIT_SAFE_MODE` variable lets you choose the safer rendering mode for your compositor.
+NextBitDeskify normally enables WebKitGTK workarounds that help blank-window cases on Linux, but those same flags can make input and window controls unreliable on some Wayland compositors. The `NEXTBITDESKIFY_LINUX_WEBKIT_SAFE_MODE` variable lets you choose the safer rendering mode for your compositor.
 
 ---
 
@@ -356,12 +356,12 @@ NextBitDeskify CLI uses the official npm and Rust sources by default. If downloa
 
 ```bash
 # macOS/Linux
-PAKE_USE_CN_MIRROR=1 nextbitdeskify https://github.com --name GitHub
+NEXTBITDESKIFY_USE_CN_MIRROR=1 nextbitdeskify https://github.com --name GitHub
 ```
 
 ```powershell
 # Windows PowerShell
-$env:PAKE_USE_CN_MIRROR="1"; nextbitdeskify https://github.com --name GitHub
+$env:NEXTBITDESKIFY_USE_CN_MIRROR="1"; nextbitdeskify https://github.com --name GitHub
 ```
 
 **Solution 2: Manual Installation**

@@ -41,7 +41,7 @@ Most tools that "wrap" a website into a desktop app rely on Electron — which m
 | Performance          | Higher memory use    | Lower memory use  |
 | Setup                | Config-heavy         | One command       |
 
-Latest benchmarks (2026) show that Tauri installers are typically between 2–10 MB, while Electron installers range from 80–200 MB — meaning Tauri builds are consistently 10–20× smaller. On real apps, developers report reductions like 142 MB → 8 MB on macOS and 95 MB → 6 MB on Windows. 
+Latest benchmarks (2026) show that Tauri installers are typically between 2–10 MB, while Electron installers range from 80–200 MB — meaning Tauri builds are consistently 10–20× smaller. On real apps, developers report reductions like 142 MB → 8 MB on macOS and 95 MB → 6 MB on Windows.
 
 | Framework                                                | Typical Installer Size | Example Case                    | Reduction      |
 | -------------------------------------------------------- | ---------------------- | ------------------------------- | -------------- |

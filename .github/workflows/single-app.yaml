@@ -102,6 +102,9 @@ on:
       NEXTBITDESKIFY_NOTARIZE_PASSWORD:
         required: false
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: ${{ inputs.title }} (${{ matrix.build }})

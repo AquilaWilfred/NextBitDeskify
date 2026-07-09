@@ -86,6 +86,7 @@ jobs:
       needs.build-cli.result == 'success' &&
       (needs.create-release.result == 'success' || needs.create-release.result == 'skipped')
     strategy:
+      fail-fast: false
       matrix:
         config: ${{ fromJSON(needs.release-apps.outputs.apps_config) }}
     uses: ./.github/workflows/single-app.yaml

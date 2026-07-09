@@ -1,8 +1,17 @@
 <p align="center">
   <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
 </p>
+
 <h1 align="center">NextBitDeskify</h1>
-<p align="center"><strong>Turn any webpage into a desktop app with one command, supports macOS, Windows, and Linux</strong></p>
+
+<p align="center">
+  <strong>Turn any webpage into a native desktop app — one command, three platforms.</strong>
+</p>
+
+<p align="center">
+  Built with Rust and Tauri for installers up to 20x smaller than Electron.
+</p>
+
 <div align="center">
     <a href="https://twitter.com/HiAquilaWilfred" target="_blank">
     <img alt="twitter" src="https://img.shields.io/badge/follow-AquilaWilfred-red?style=flat-square&logo=Twitter"></a>
@@ -14,23 +23,48 @@
     <img alt="GitHub commit" src="https://img.shields.io/github/commit-activity/m/AquilaWilfred/NextBitDeskify?style=flat-square"></a>
     <a href="https://github.com/AquilaWilfred/NextBitDeskify/issues?q=is%3Aissue+is%3Aclosed" target="_blank">
     <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/AquilaWilfred/NextBitDeskify.svg?style=flat-square"></a>
+    <img alt="license" src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
 </div>
+
+<br>
+
+---
+
+## Why NextBitDeskify
+
+Most tools that "wrap" a website into a desktop app rely on Electron — which means bundling an entire copy of Chromium into every install. NextBitDeskify takes a different approach: it's built on **Rust and Tauri**, using your operating system's native webview instead. The result is smaller, faster, and lighter on memory, without giving up the features people expect from a real desktop app.
+
+| | Electron-based tools | NextBitDeskify |
+|---|---|---|
+| Typical install size | 100MB+ | Often under 10MB |
+| Runtime | Bundled Chromium | Native OS webview |
+| Performance | Higher memory use | Lower memory use |
+| Setup | Config-heavy | One command |
+
+---
 
 ## Features
 
-- 🎐 **Lightweight**: Installer is nearly 20 times smaller than Electron packages, typically under 10M on disk
-- 🚀 **Fast**: Built with Rust Tauri, much faster than traditional JS frameworks with lower memory usage
-- ⚡ **Easy to use**: One-command packaging via CLI or online building, no complex configuration needed
-- 📦 **Feature-rich**: Supports shortcuts, immersive windows, drag & drop, style customization, ad removal
+- 💎 **Lightweight** — most installers stay under 10MB, about 20x smaller than Electron
+- 🔷 **Fast** — runs on native Rust + Tauri, so it's easier on memory than JS-based wrappers
+- 🔹 **Simple** — one CLI command turns a website into an app, or build it online with zero setup
+- 🛡️ **Complete** — shortcuts, immersive windowing, drag & drop, styling, and ad removal, all included
+---
 
 ## Getting Started
 
-- **Beginners**: Download ready-made [Popular Packages](#popular-packages) or use [Online Building](docs/github-actions-usage.md) with no environment setup required
-- **Developers**: Install [CLI Tool](docs/cli-usage.md) for one-command packaging of any website with customizable icons, window settings, and more
-- **Advanced Users**: Clone the project locally for [Custom Development](#development), or check [Advanced Usage](docs/advanced-usage.md) for style customization and feature enhancement
-- **Troubleshooting**: Check [FAQ](docs/faq.md) for common issues and solutions
+Pick the path that fits you:
+
+- **Just want an app?** Grab a ready-made build from [Popular Packages](#popular-packages) below, or use [Online Building](docs/github-actions-usage.md) — no setup required.
+- **Want to package your own site?** Install the [CLI Tool](docs/cli-usage.md) for one-command builds with custom icons, window sizing, and more.
+- **Want to modify NextBitDeskify itself?** Clone the repo and see [Development](#development), or check [Advanced Usage](docs/advanced-usage.md) for deeper customization.
+- **Something not working?** Check the [FAQ](docs/faq.md) first.
+
+---
 
 ## Popular Packages
+
+Pre-built, ready-to-download desktop apps for widely used sites. More are available on the [Releases](https://github.com/AquilaWilfred/NextBitDeskify/releases) page.
 
 <table>
     <tr>
@@ -132,7 +166,7 @@
 </table>
 
 <details>
-<summary>🏂 You can download more applications from <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases">Releases</a>. <b>Click here to expand the shortcuts reference!</b></summary>
+<summary style="cursor: pointer;"> Discover more applications <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases">Releases</a>. <b> — click to expand</b></summary>
 
 <br/>
 
@@ -157,52 +191,73 @@ In addition, double-click the title bar to switch to full-screen mode. For Mac u
 
 </details>
 
+---
+
 ## Command-Line Packaging
 
 ![NextBitDeskify](https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/nextbitdeskify1.gif)
 
 ```bash
-# Install NextBitDeskify CLI
+# Install the CLI
 pnpm install -g nextbitdeskify-cli
 
-# Basic usage - automatically fetches website icon
+# Basic usage — icon is fetched automatically
 nextbitdeskify https://github.com --name GitHub
 
 # Advanced usage with custom options
-nextbitdeskify https://weekly.AquilaWilfred.fun --name Weekly --icon https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns --width 1200 --height 800 --hide-title-bar
+nextbitdeskify https://weekly.AquilaWilfred.fun --name Weekly \
+  --icon https://cdn.AquilaWilfred.fun/nextbitdeskify/weekly.icns \
+  --width 1200 --height 800 --hide-title-bar
 ```
 
-First-time packaging requires environment setup and may be slower, subsequent builds are fast. For complete parameter documentation, see [CLI Usage Guide](docs/cli-usage.md). Don't want to use CLI? Try [GitHub Actions Online Building](docs/github-actions-usage.md).
+The first build sets up your environment and takes a little longer; subsequent builds are fast. Full parameter reference is in the [CLI Usage Guide](docs/cli-usage.md). Prefer not to install anything locally? Use [GitHub Actions Online Building](docs/github-actions-usage.md) instead.
+
+---
 
 ## Development
 
-Requires Rust `>=1.85` and Node `>=22` (recommended LTS; `>=18` also works). For detailed installation guide, see [Tauri documentation](https://v2.tauri.app/start/prerequisites/). If unfamiliar with development environment, use the CLI tool instead.
+Requires **Rust ≥1.85** and **Node ≥22** (LTS recommended; Node ≥18 also works). See the [Tauri prerequisites guide](https://v2.tauri.app/start/prerequisites/) for a full environment setup. If you just want to package a site rather than modify the tool, use the CLI instead.
 
 ```bash
 # Install dependencies
 pnpm i
 
-# Local development [right-click to open debug mode]
+# Run in development mode (right-click to open debug tools)
 pnpm run dev
 
-# Build application
+# Build for production
 pnpm run build
 ```
 
-For style customization, feature enhancement, container communication and other advanced features, see [Advanced Usage Documentation](docs/advanced-usage.md).
+For style customization, feature extensions, and container communication, see the [Advanced Usage Guide](docs/advanced-usage.md).
 
-## Developers
+---
 
-The development of NextBitDeskify has been greatly enriched by these contributors. Their work has added vital capabilities, and we encourage you to connect with them. ❤️
+## Contributors
+
+NextBitDeskify has grown thanks to the people who've contributed code, ideas, and fixes. Thank you. 💛
 
 <a href="https://github.com/AquilaWilfred/NextBitDeskify/graphs/contributors">
   <img src="./CONTRIBUTORS.svg?v=2" alt="Contributors" width="1000" />
 </a>
 
-## Support
+---
 
-- If NextBitDeskify helped you, give it a star, [share it](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux), or open an issue or PR.
+## Support the Project
 
+<<<<<<< HEAD
+=======
+If NextBitDeskify has been useful to you:
+
+- ⭐ Star the repo
+- 🐦 [Share it on Twitter](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux)
+- 🐛 Open an issue or submit a pull request
+
+---
+
+>>>>>>> d3fb692 (Added objectives to guide me to the next level)
 ## License
 
-NextBitDeskify is open source under GPL-3.0, see [LICENSE](./LICENSE) and [NextBitDeskify Output Exception](./LICENSE-EXCEPTION); apps you build with NextBitDeskify are entirely yours to use and distribute. If you fork NextBitDeskify into your own product, to avoid confusion please give it a different name and credit NextBitDeskify as the source.
+NextBitDeskify is open source under the **MIT License** — see [LICENSE](./LICENSE).
+
+Use of this project is also governed by the [Terms of Use](./TERMS.md) and [Trademark Policy](./TRADEMARK.md). In short: apps you build with NextBitDeskify are entirely yours to use, license, and distribute however you like. If you fork the project itself, please give your fork its own name and credit NextBitDeskify as the source.

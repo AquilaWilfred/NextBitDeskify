@@ -1,21 +1,21 @@
-## How to contribute to NextBitDeskify
+## How to Contribute to NextBitDeskify
 
-**Welcome to create [pull requests](https://github.com/AquilaWilfred/NextBitDeskify/compare/) for bugfix, new component, doc, example, suggestion and anything.**
+**We welcome [pull requests](https://github.com/AquilaWilfred/NextBitDeskify/compare/) for bug fixes, new components, documentation, examples, suggestions, or anything else you'd like to bring to the project.**
 
 ## Branch Management
 
-All development happens directly on `main`. Submit pull requests to `main`.
+All development happens directly on `main`. Please submit pull requests against `main`.
 
 ## Development Setup
 
 ### Prerequisites
 
-- Node.js ≥22.0.0 (recommended LTS, older versions ≥18.0.0 may work)
-- Rust ≥1.85.0 (required for edition2024 support in dependencies)
+- Node.js ≥22.0.0 (LTS recommended; versions ≥18.0.0 may also work)
+- Rust ≥1.85.0 (needed for edition2024 support used by some dependencies)
 - Platform-specific build tools:
   - **macOS**: Xcode Command Line Tools (`xcode-select --install`)
   - **Windows**: Visual Studio Build Tools with MSVC
-  - **Linux**: `build-essential`, `libwebkit2gtk`, system dependencies
+  - **Linux**: `build-essential`, `libwebkit2gtk`, and related system dependencies
 
 ### Installation
 
@@ -30,63 +30,63 @@ pnpm install
 # Start development (Tauri only)
 pnpm run dev
 
-# Start development (CLI Wrapper + Tauri) - Recommended for CLI changes
+# Start development (CLI wrapper + Tauri) — recommended if you're working on the CLI
 pnpm run cli:dev -- https://web.telegram.org/k/
 ```
 
 ### Testing
 
 ```bash
-# Run all tests (unit + integration + builder)
+# Run the full test suite (unit + integration + builder)
 pnpm test
 
-# Build CLI for testing
+# Build the CLI for local testing
 pnpm run cli:build
 ```
 
 ### Tips
 
-- Use `--iterative-build` flag during development to skip some hefty checks and use app bundle format for faster debugging:
+- During development, the `--iterative-build` flag skips some of the heavier checks and uses the app bundle format, which speeds up debugging:
 
-  ```bash
+```bash
   pnpm run cli:dev --iterative-build
-  ```
+```
 
 ## Continuous Integration
 
-The project uses streamlined GitHub Actions workflows:
+The project runs a streamlined set of GitHub Actions workflows:
 
-- **Quality & Testing**: Automatic code quality checks and comprehensive testing on all platforms
-- **Claude AI Integration**: Automated code review and interactive assistance
-- **Release Management**: Coordinated releases with app building and Docker publishing
+- **Quality & Testing** — automated code quality checks and full test coverage across all supported platforms
+- **Claude AI Integration** — automated code review and interactive assistance on pull requests
+- **Release Management** — coordinated releases covering app builds and Docker publishing
 
 ## Troubleshooting
 
 ### macOS 26 Beta Compilation Issues
 
-If you're running macOS 26 Beta and encounter compilation errors related to `mac-notification-sys` or system frameworks (errors about `CoreFoundation`, `_Builtin_float` modules), create a `src-tauri/.cargo/config.toml` file with:
+If you're on macOS 26 Beta and run into compilation errors involving `mac-notification-sys` or system frameworks (for example, errors mentioning `CoreFoundation` or `_Builtin_float`), create a `src-tauri/.cargo/config.toml` file with the following:
 
 ```toml
 [env]
 # Fix for macOS 26 Beta compatibility issues
-# Forces use of compatible SDK when building on macOS 26 Beta
+# Forces use of a compatible SDK when building on macOS 26 Beta
 MACOSX_DEPLOYMENT_TARGET = "15.0"
 SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
 ```
 
-This file is already in `.gitignore` and should not be committed to the repository.
+This file is already listed in `.gitignore`, so it won't be committed to the repository.
 
-**Root Cause**: macOS 26 Beta uses newer system frameworks that aren't yet fully compatible with Tauri's dependencies. This configuration uses the universal SDK symlink which automatically points to your system's available SDK version.
+**Root cause**: macOS 26 Beta ships newer system frameworks that aren't fully compatible with some of Tauri's dependencies yet. This configuration points to the universal SDK symlink, which automatically resolves to whichever SDK version is available on your system.
 
 ### Common Build Issues
 
-- **Rust compilation errors**: Run `cargo clean` in `src-tauri/` directory
-- **`cargo` command not found after installation**: NextBitDeskify CLI now reloads the Rust environment automatically, but if the issue persists reopen your terminal or run `source ~/.cargo/env` (macOS/Linux) / `call %USERPROFILE%\.cargo\env` (Windows) before retrying
-- **Node dependency issues**: Delete `node_modules` and run `pnpm install`
-- **Permission errors on macOS**: Run `sudo xcode-select --reset`
+- **Rust compilation errors** — run `cargo clean` inside the `src-tauri/` directory
+- **`cargo` command not found after installation** — the NextBitDeskify CLI reloads the Rust environment automatically, but if the problem persists, reopen your terminal or run `source ~/.cargo/env` (macOS/Linux) or `call %USERPROFILE%\.cargo\env` (Windows) before trying again
+- **Node dependency issues** — delete `node_modules` and reinstall with `pnpm install`
+- **Permission errors on macOS** — run `sudo xcode-select --reset`
 
-See the [Advanced Usage Guide](docs/advanced-usage.md) for project structure and customization techniques.
+For details on project structure and customization, see the [Advanced Usage Guide](docs/advanced-usage.md).
 
 ## More
 
-It is a good habit to create a feature request issue to discuss whether the feature is necessary before you implement it. However, it's unnecessary to create an issue to claim that you found a typo or improved the readability of documentation, just create a pull request.
+Before implementing a new feature, it's good practice to open a feature request issue first so it can be discussed. That said, there's no need to open an issue just to fix a typo or improve documentation clarity — feel free to submit a pull request directly for those.

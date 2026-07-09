@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate contributors SVG
-        uses: AquilaWilfred/contributors-list@master
+        uses: AquilaWilfred/nextbit-hall-of-fame@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           svgPath: CONTRIBUTORS.svg

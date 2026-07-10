@@ -198,7 +198,7 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         <td>YouTube Music
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube Music.dmg">Mac</a>
             <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube Music_x64.msi">Windows</a>
-            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTube Music_x86_64.deb">Linux</a>
+            <a href="https://github.com/AquilaWilfred/NextBitDeskify/releases/latest/download/YouTubeMusic_x86_64.deb">Linux</a>
         </td>
     </tr>
     <tr>

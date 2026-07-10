@@ -78,6 +78,62 @@ jobs:
           path: dist/
           retention-days: 1
 
+  # Multi-OS Rust CLI build — produces native binaries per platform
+  build-rust-cli:
+    name: Build Rust CLI (${{ matrix.os }})
+    needs: release-apps
+    if: needs.release-apps.result == 'success'
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            artifact_name: nextbitdeskify-linux-x86_64
+            binary_path: target/release/nextbitdeskify
+          - os: windows-latest
+            artifact_name: nextbitdeskify-windows-x86_64
+            binary_path: target/release/nextbitdeskify.exe
+          - os: macos-latest
+            artifact_name: nextbitdeskify-macos-x86_64
+            binary_path: target/release/nextbitdeskify
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+
+      - name: Cache cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ matrix.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Build release binary
+        run: cargo build --release
+
+      - name: Upload binary artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: ${{ matrix.artifact_name }}
+          path: ${{ matrix.binary_path }}
+          retention-days: 7
+
+      - name: Attach binary to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ matrix.binary_path }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build-popular-apps:
     name: ${{ matrix.config.title }}
     needs: [release-apps, build-cli, create-release]

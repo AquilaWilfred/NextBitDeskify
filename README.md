@@ -328,7 +328,7 @@ NextBitDeskify has grown thanks to the people who've contributed code, ideas, an
 If NextBitDeskify has been useful to you:
 
 - ⭐ Star the repo
-- **X** [Share it on Twitter](https://twitter.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20one%20command.%20Nearly%2020x%20smaller%20than%20Electron%20packages,%20supports%20macOS%20Windows%20Linux)
+- **X** [Share on X](https://x.com/intent/tweet?url=https://github.com/AquilaWilfred/NextBitDeskify&text=NextBitDeskify%20-%20Turn%20any%20webpage%20into%20a%20desktop%20app%20with%20a%20single%20command.%20Approximately%2018x%20smaller%20the%20size%20of%20Electron%20packages%2E%20Supports%20macOS%20Windows%20Linux)
 - 🐛 Open an issue or submit a pull request
 
 ---

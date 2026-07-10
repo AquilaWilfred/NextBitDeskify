@@ -84,6 +84,8 @@ jobs:
     needs: release-apps
     if: needs.release-apps.result == 'success'
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
     strategy:
       fail-fast: false
       matrix:

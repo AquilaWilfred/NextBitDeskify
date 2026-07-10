@@ -1,6 +1,31 @@
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 ## How to Contribute to NextBitDeskify
 
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="docs/pake-action.md">← Action Guide</a></td>
+    <td align="center"><a href="CONTRIBUTING.md">Contributing</a></td>
+    <td align="right"><a href="TERMS.md">Terms →</a></td>
+  </tr>
+</table>
+
 **We welcome [pull requests](https://github.com/AquilaWilfred/NextBitDeskify/compare/) for bug fixes, new components, documentation, examples, suggestions, or anything else you'd like to bring to the project.**
+
+> 🌱 Great contributions are thoughtful, reproducible, and easy for maintainers to review.
+
+## Contribution Path
+
+| You want to... | Best next step |
+| --- | --- |
+| Fix a typo or improve docs | Open a PR directly |
+| Add a feature | Open an issue first, then PR |
+| Reproduce a bug | Include steps and expected vs actual behavior |
+| Improve packaging or build behavior | Share logs and platform details |
 
 ## Branch Management
 
@@ -90,3 +115,26 @@ For details on project structure and customization, see the [Advanced Usage Guid
 ## More
 
 Before implementing a new feature, it's good practice to open a feature request issue first so it can be discussed. That said, there's no need to open an issue just to fix a typo or improve documentation clarity — feel free to submit a pull request directly for those.
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="docs/pake-action.md">← Action Guide</a></td>
+    <td align="center"><a href="CONTRIBUTING.md">Contributing</a></td>
+    <td align="right"><a href="TERMS.md">Terms →</a></td>
+  </tr>
+</table>
+
+## Why your contribution matters
+
+- Better tooling for everyone: each improvement makes NextBitDeskify easier to use for people packaging websites into desktop apps. Evidence: the docs and CLI references show the project is designed around user-friendly packaging workflows.
+- Stronger project credibility: well-reviewed changes help the project gain trust with both developers and users. Evidence: the contribution guidance and support sections encourage clear issues, thoughtful PRs, and shared ownership.
+- More momentum for the idea: every contribution helps the project move from a clever prototype to a widely useful tool. Evidence: the roadmap and documentation expansion point to a project that is still growing.
+
+If you want to help the project gain visibility, your pull request, issue report, or idea can make a real difference.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

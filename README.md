@@ -4,6 +4,14 @@
 
 <h1 align="center">NextBitDeskify</h1>
 
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="docs/README.md">← Docs Home</a></td>
+    <td align="center"><a href="docs/cli-usage.md">CLI Guide</a></td>
+    <td align="right"><a href="docs/advanced-usage.md">Advanced Usage →</a></td>
+  </tr>
+</table>
+
 <p align="center">
   <strong>Turn any webpage into a native desktop app — one command, three platforms.</strong>
 </p>
@@ -11,6 +19,36 @@
 <p align="center">
   Built with Rust and Tauri for installers up to 20x smaller than Electron.
 </p>
+
+> ✨ A modern way to turn any website into a polished desktop app — fast, lightweight, and delightfully simple.
+
+## About the Tool
+
+NextBitDeskify is a lightweight desktop packaging toolkit for turning any website into a polished native app. It combines a fast CLI workflow with a Tauri-based runtime so you can package web apps, dashboards, internal portals, AI tools, and productivity sites for macOS, Windows, and Linux without dragging in a heavy browser engine.
+
+### What makes it useful
+
+- Wrap a website into a desktop app with a single command
+- Keep installers small by using the native OS webview instead of bundling Chromium
+- Customize app name, icon, size, title, tray behavior, and injected JavaScript or CSS
+- Build locally or through GitHub Actions for fully automated packaging
+- Support a wide range of use cases, from personal tools to internal business apps
+
+### Typical workflow
+
+1. Point the CLI at a URL
+2. Choose a name, icon, and window settings
+3. Build the app for your target platform
+4. Distribute the result as a native installer or portable app
+
+## At a Glance
+
+| What you get | Why it stands out |
+| --- | --- |
+| One-command packaging | Turn a URL into a desktop app in seconds |
+| Native webview runtime | Faster and lighter than Electron-style wrappers |
+| Cross-platform output | Build for macOS, Windows, and Linux |
+| Custom styling and behavior | Tweak the experience with injected CSS/JS and window options |
 
 <div align="center">
     <a href="https://twitter.com/HiAquilaWilfred" target="_blank">
@@ -300,3 +338,26 @@ If NextBitDeskify has been useful to you:
 NextBitDeskify is open source under the **MIT License** — see [LICENSE](./LICENSE).
 
 Use of this project is also governed by the [Terms of Use](./TERMS.md) and [Trademark Policy](./TRADEMARK.md). In short: apps you build with NextBitDeskify are entirely yours to use, license, and distribute however you like. If you fork the project itself, please give your fork its own name and credit NextBitDeskify as the source.
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="docs/README.md">← Docs Home</a></td>
+    <td align="center"><a href="docs/cli-usage.md">CLI Guide</a></td>
+    <td align="right"><a href="docs/advanced-usage.md">Advanced Usage →</a></td>
+  </tr>
+</table>
+
+## Why this project stands out
+
+- Fast desktop packaging: NextBitDeskify turns a website into a native app without dragging in a heavy browser runtime. Evidence: the README highlights the tool’s lightweight Tauri-based approach and the small installer sizes it targets.
+- Broad customization: you can shape the window, icon, title bar, and injected UI behavior for a more polished app experience. Evidence: the advanced and CLI guides document the customization options directly.
+- Stronger distribution story: the project already supports online builds and reusable automation, which makes it easier to ship apps consistently. Evidence: the GitHub Actions guides and release workflow files describe the packaged-build path.
+
+If this project saves you time or helps you ship a better app, consider starring the repo, sharing it with a teammate, or opening a contribution to help it grow.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

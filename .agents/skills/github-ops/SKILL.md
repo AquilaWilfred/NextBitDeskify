@@ -105,3 +105,26 @@ gh run rerun <run-id> --failed-only
 4. Before replying to an issue or PR, read the body to confirm the author's language; match their language in the reply. This applies to the author, not to arbitrary thread commenters.
 5. Before replying that a fix is released, verify the public artifact first: `npm view nextbitdeskify-cli version` for CLI releases or `gh release view <tag>` for app releases.
 6. Before closing an issue after release, confirm the target with `gh issue view <id> --json number,title,state,author,url` and include the concrete version or upgrade command in the comment.
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="docs/README.md">← Docs Home</a></td>
+    <td align="center"><a href="README.md">Project Overview</a></td>
+    <td align="right"><a href="OBJECTVES.md">Next Objectives →</a></td>
+  </tr>
+</table>
+
+## Why use NextBitDeskify?
+
+- Lightweight packaging: the project is built around Tauri and the native OS webview, keeping installers compact and memory usage lower than many Electron-style wrappers. Evidence: the project README highlights common Tauri installer sizes around 2–10 MB compared with Electron examples in the 80–200 MB range.
+- Flexible customization: you can shape the app experience with custom icons, sizing, titles, tray behavior, and injected CSS or JavaScript. Evidence: the CLI and advanced usage guides describe these options directly and show how to tailor each packaged app.
+- Simple automation: packaging can be automated through GitHub Actions and CI workflows, which makes releases repeatable and easier for teams to maintain. Evidence: the repository includes dedicated GitHub Actions documentation and workflow assets for online builds.
+
+Want to see where the project is heading? Visit [Next Objectives](OBJECTVES.md) to learn why the team wants to push higher and make the tool more useful over time.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

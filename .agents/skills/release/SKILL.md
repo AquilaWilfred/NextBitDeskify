@@ -129,3 +129,26 @@ Cross-platform builds (Windows/Linux) are handled by CI, not locally.
 1. **NEVER** auto-commit or auto-push without explicit user request
 2. **NEVER** tag before all checks pass
 3. **ALWAYS** verify the four version files are in sync before tagging
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="docs/README.md">← Docs Home</a></td>
+    <td align="center"><a href="README.md">Project Overview</a></td>
+    <td align="right"><a href="OBJECTVES.md">Next Objectives →</a></td>
+  </tr>
+</table>
+
+## Why use NextBitDeskify?
+
+- Lightweight packaging: the project is built around Tauri and the native OS webview, keeping installers compact and memory usage lower than many Electron-style wrappers. Evidence: the project README highlights common Tauri installer sizes around 2–10 MB compared with Electron examples in the 80–200 MB range.
+- Flexible customization: you can shape the app experience with custom icons, sizing, titles, tray behavior, and injected CSS or JavaScript. Evidence: the CLI and advanced usage guides describe these options directly and show how to tailor each packaged app.
+- Simple automation: packaging can be automated through GitHub Actions and CI workflows, which makes releases repeatable and easier for teams to maintain. Evidence: the repository includes dedicated GitHub Actions documentation and workflow assets for online builds.
+
+Want to see where the project is heading? Visit [Next Objectives](OBJECTVES.md) to learn why the team wants to push higher and make the tool more useful over time.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

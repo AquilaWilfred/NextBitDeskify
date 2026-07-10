@@ -1,8 +1,31 @@
+<p align="center">
+  <img src="../Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 # Frequently Asked Questions (FAQ)
 
-<h4 align="right"><strong>English</strong> | <a href="faq_CN.md">简体中文</a></h4>
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="advanced-usage.md">← Advanced Usage</a></td>
+    <td align="center"><a href="faq.md">FAQ</a></td>
+    <td align="right"><a href="github-actions-usage.md">GitHub Actions →</a></td>
+  </tr>
+</table>
+
 
 Common issues and solutions when using NextBitDeskify.
+
+> 🔎 Most problems fall into one of three buckets: environment setup, packaging/runtime behavior, or platform-specific quirks.
+
+## Quick Troubleshooting Map
+
+| If you see... | Likely area |
+| --- | --- |
+| Build errors during install | Rust or system dependency setup |
+| Window opens but the UI feels wrong | App runtime or webview behavior |
+| Packaging succeeds but the app is unstable | Platform-specific packaging or permissions |
 
 ## Table of Contents
 
@@ -592,3 +615,26 @@ If your issue isn't covered here:
    - Node.js and Rust versions (`node --version`, `rustc --version`)
    - Complete error message
    - Build command you used
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="advanced-usage.md">← Advanced Usage</a></td>
+    <td align="center"><a href="faq.md">FAQ</a></td>
+    <td align="right"><a href="github-actions-usage.md">GitHub Actions →</a></td>
+  </tr>
+</table>
+
+## Why this support section matters
+
+- Lower friction for new users: clear troubleshooting helps more people adopt the tool confidently. Evidence: the FAQ exists specifically to answer common packaging and runtime questions.
+- Higher trust: a well-documented project feels more reliable and production-ready. Evidence: the support pages focus on real issues and practical fixes.
+- Better reputation: the easier the tool is to use, the easier it is to recommend it to teammates and clients. Evidence: the docs now pair setup guidance with troubleshooting paths.
+
+If this project solved a problem for you, a quick share or star can help more people discover it.
+
+<p align="center">
+  <img src="../Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

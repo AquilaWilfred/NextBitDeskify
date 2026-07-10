@@ -1,8 +1,32 @@
+<p align="center">
+  <img src="../Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 # CLI Usage Guide
 
-<h4 align="right"><strong>English</strong> | <a href="cli-usage_CN.md">简体中文</a></h4>
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="README.md">← Docs Home</a></td>
+    <td align="center"><a href="cli-usage.md">CLI Reference</a></td>
+    <td align="right"><a href="advanced-usage.md">Advanced Usage →</a></td>
+  </tr>
+</table>
+
 
 Complete command-line reference and basic usage for NextBitDeskify CLI.
+
+> 🛠️ Whether you want a quick demo app or a polished production build, this guide covers the workflow from first install to advanced packaging.
+
+## Pick the Right Path
+
+| Goal | Command pattern |
+| --- | --- |
+| Fastest start | `nextbitdeskify https://example.com --name MyApp` |
+| Custom icon | add `--icon ...` |
+| Full-screen or immersive shell | add `--hide-title-bar` and custom sizing |
+| Production-ready packaging | use `--debug` for testing and platform-specific targets for release |
 
 ## Installation
 
@@ -623,3 +647,26 @@ docker run --rm --privileged \
     ghcr.io/AquilaWilfred/nextbitdeskify \
     https://example.com --name myapp --icon ./icon.png --targets appimage
 ```
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="README.md">← Docs Home</a></td>
+    <td align="center"><a href="cli-usage.md">CLI Reference</a></td>
+    <td align="right"><a href="advanced-usage.md">Advanced Usage →</a></td>
+  </tr>
+</table>
+
+## Why this CLI matters
+
+- Speed and simplicity: the CLI lets people package a website into a desktop app in one step. Evidence: the CLI guide highlights command examples and beginner-friendly workflows.
+- Lower friction: the project removes the need to build a custom wrapper from scratch. Evidence: the command examples and packaging flow are designed to feel direct and approachable.
+- Strong product story: a polished CLI makes the project easier to discover, try, and recommend. Evidence: the main README and docs now position it as a lightweight, modern packaging tool.
+
+If this workflow saves you time, sharing the project or starring the repository helps it reach more people.
+
+<p align="center">
+  <img src="../Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

@@ -1,4 +1,18 @@
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 # Contributor Covenant Code of Conduct
+
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="README.md">← Project Overview</a></td>
+    <td align="center"><a href="CODE_OF_CONDUCT.md">Community</a></td>
+    <td align="right"><a href="CONTRIBUTING.md">Contributing →</a></td>
+  </tr>
+</table>
 
 ## Our Pledge
 
@@ -119,3 +133,26 @@ enforcement ladder](https://github.com/mozilla/diversity).
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="README.md">← Project Overview</a></td>
+    <td align="center"><a href="CODE_OF_CONDUCT.md">Community</a></td>
+    <td align="right"><a href="CONTRIBUTING.md">Contributing →</a></td>
+  </tr>
+</table>
+
+## Why this community matters
+
+- A welcoming open source project: NextBitDeskify gives developers a simple way to package their web tools into desktop apps. Evidence: the project README and docs emphasize one-command packaging and broad platform support.
+- A practical mission: the project helps turn ideas into usable native experiences without overengineering the stack. Evidence: the CLI and packaging guides focus on practical workflows and repeatable builds.
+- A growing ecosystem: contributions, feedback, and usage help the project become more polished and more valuable over time. Evidence: the contributors and support sections invite people to participate directly.
+
+If this project feels useful to you, help the community grow by sharing your experience, inviting others to try it, or contributing back.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

@@ -1,7 +1,31 @@
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 # Terms of Use
+
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="CONTRIBUTING.md">← Contributing</a></td>
+    <td align="center"><a href="TERMS.md">Terms</a></td>
+    <td align="right"><a href="TRADEMARK.md">Trademark →</a></td>
+  </tr>
+</table>
 
 By downloading, installing, cloning, or using this software ("NextBitDeskify"),
 you agree to the following terms:
+
+> 📘 This document is the short-form contract for using the software, its source, and the apps it helps you build.
+
+## Quick Summary
+
+- The software is available under the MIT License.
+- Attribution is expected when redistributing or forking the project.
+- The NextBitDeskify name and logo remain protected as trademarks.
+- Apps you build with the tool remain your own output, subject to your own licensing choices.
+
 
 ## 1. License
 
@@ -112,3 +136,26 @@ does not apply to NextBitDeskify's own source code — any distributed copy
 or derivative of the NextBitDeskify tool itself remains subject to the
 MIT License and these Terms of Use, including the attribution and
 trademark requirements above.
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="CONTRIBUTING.md">← Contributing</a></td>
+    <td align="center"><a href="TERMS.md">Terms</a></td>
+    <td align="right"><a href="TRADEMARK.md">Trademark →</a></td>
+  </tr>
+</table>
+
+## Why the project is worth supporting
+
+- Practical value: NextBitDeskify helps people turn websites into desktop apps with less friction and lower overhead. Evidence: the package overview and CLI usage docs frame it as a simple, lightweight packaging tool.
+- Clear ownership: the project’s licensing and branding guidance make it easier for users and contributors to build on it responsibly. Evidence: the terms and trademark pages provide explicit guidance for public use.
+- A useful open-source story: a well-defined project foundation helps more people feel confident using and extending it. Evidence: the repo includes licensing, contribution, and documentation resources together.
+
+If the tool has helped your workflow, supporting the project by using it, sharing it, or contributing helps keep the momentum alive.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

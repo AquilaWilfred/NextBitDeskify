@@ -1,4 +1,18 @@
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 # AGENTS.md - NextBitDeskify Project Knowledge Base
+
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="TRADEMARK.md">← Trademark</a></td>
+    <td align="center"><a href="AGENTS.md">Project Notes</a></td>
+    <td align="right"><a href="README.md">Project Overview →</a></td>
+  </tr>
+</table>
 
 > Project-specific Rust + Tauri rules: `.claude/rules/rust.md`. Release runbook: `.agents/skills/release/SKILL.md` (run `/release`; `.claude/skills/*` are symlinks into `.agents/skills/`, edit the `.agents` copy only).
 
@@ -15,26 +29,43 @@
 
 ```
 NextBitDeskify/
-├── bin/                   # CLI source code (TypeScript)
-│   └── cli.ts            # Main CLI entry (Commander.js)
-├── src-tauri/             # Tauri Rust application
-│   ├── src/              # Rust source code
-│   ├── src/app/          # window creation, setup, menu, config, and invokes
-│   ├── src/inject/       # injected JS/CSS behavior
-│   ├── Cargo.toml        # Rust dependencies and version
-│   ├── tauri.conf.json   # Tauri configuration and version
-│   └── .cargo/           # Cargo configuration (gitignored)
-├── dist/                 # Compiled CLI output
-├── docs/                 # Documentation
-│   ├── cli-usage.md      # CLI parameters
-│   ├── advanced-usage.md # Customization guide
-│   └── faq.md           # Troubleshooting
-├── scripts/              # Utility scripts
-├── tests/                # Unit, integration, and release-flow tests
-├── .github/workflows/     # quality/test and release automation
-├── default_app_list.json # Popular apps config for release builds
-├── package.json          # Node.js dependencies and version
-└── rollup.config.js      # CLI build configuration
+├── .agents/                 # agent skill docs and release guidance
+├── .claude/                 # local agent instructions and rules
+├── .github/                 # workflows, issue templates, funding
+│   ├── actions/             # reusable workflow actions
+│   └── workflows/           # CI, release, and test automation
+├── bin/                     # CLI source code (TypeScript)
+│   ├── builders/            # platform-specific builders
+│   ├── helpers/             # shared helpers and config merging
+│   ├── options/             # CLI option parsing
+│   └── utils/               # small utility modules
+├── docs/                    # user documentation and guides
+├── scripts/                 # release and utility scripts
+├── src-tauri/               # Tauri/Rust desktop application
+│   ├── assets/              # packaging assets and installer files
+│   ├── capabilities/        # Tauri capabilities
+│   ├── icons/               # macOS icon assets
+│   ├── png/                 # Windows/Linux icon assets
+│   ├── src/                 # Rust application source
+│   │   ├── app/             # window, tray, menu, and invoke logic
+│   │   ├── inject/          # injected JS/CSS behavior
+│   │   └── lib.rs           # app entry point
+│   ├── Cargo.toml           # Rust crate metadata and dependencies
+│   ├── nextbitdeskify.json  # default app configuration
+│   ├── tauri.conf.json      # shared Tauri config
+│   └── tauri.*.conf.json    # platform-specific overrides
+├── tests/                   # unit, integration, and release-flow tests
+├── action.yml               # GitHub Action entrypoint
+├── default_app_list.json    # popular app definitions for release builds
+├── dist/                    # compiled CLI bundle (generated)
+├── LICENSE                  # MIT license
+├── LICENSE-EXCEPTION        # project-specific exception notice
+├── package.json             # Node package metadata and scripts
+├── README.md                # project overview and usage
+├── TERMS.md                 # terms of use
+├── TRADEMARK.md             # trademark policy
+├── pnpm-lock.yaml           # pnpm lockfile
+└── rollup.config.js        # CLI build configuration
 ```
 
 ## Development Commands
@@ -221,3 +252,26 @@ The first `cargo build` on a fresh clone takes 10+ minutes as Cargo compiles eve
   - `nextbitdeskify.json` - default app configuration.
   - `src-tauri/tauri.conf.json` - shared Tauri settings.
   - `src-tauri/tauri.{macos,windows,linux}.conf.json` - per-platform overrides.
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="TRADEMARK.md">← Trademark</a></td>
+    <td align="center"><a href="AGENTS.md">Project Notes</a></td>
+    <td align="right"><a href="README.md">Project Overview →</a></td>
+  </tr>
+</table>
+
+## Why this project deserves attention
+
+- A lean packaging approach: NextBitDeskify helps creators turn web tools into desktop apps without the overhead of larger wrappers. Evidence: the project description and docs consistently frame it as a lightweight Tauri-based option.
+- A clear contributor story: the repo is structured so people can understand the CLI, the runtime, and the packaging flow quickly. Evidence: the AGENTS and repository structure sections outline the main architecture clearly.
+- Room to grow: the project already has a roadmap and a strong docs base, making it easier for new contributors to add value. Evidence: the roadmap and documentation pages show a clear direction for future development.
+
+If you believe in the idea, help it gain momentum by sharing it, contributing, or using it in a real workflow.
+
+<p align="center">
+  <img src="Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

@@ -1,8 +1,32 @@
+<p align="center">
+  <img src="../Nextbitdeskify_banner.svg" alt="NextBitDeskify" width="600">
+</p>
+
+<h1 align="center">NextBitDeskify</h1>
+
 # Advanced Usage
 
-<h4 align="right"><strong>English</strong> | <a href="advanced-usage_CN.md">简体中文</a></h4>
+<table style="width:100%; margin: 0.85rem 0 1.2rem;">
+  <tr>
+    <td align="left"><a href="cli-usage.md">← CLI Guide</a></td>
+    <td align="center"><a href="advanced-usage.md">Advanced Usage</a></td>
+    <td align="right"><a href="faq.md">Troubleshooting →</a></td>
+  </tr>
+</table>
+
 
 Customize NextBitDeskify apps with style modifications, JavaScript injection, and container communication.
+
+> 🚀 This guide is for builders who want more than the default experience: custom UI, injected behavior, and deeper control.
+
+## What You Can Customize
+
+| Area | What you can do |
+| --- | --- |
+| Visual design | Hide ads, change colors, adjust spacing, and create a more app-like interface |
+| Interaction | Add shortcuts, keyboard helpers, and custom event behavior |
+| Window behavior | Tune sizing, fullscreen, title bar visibility, and app shell behavior |
+| Integration | Communicate between the webpage and the host app using Tauri commands |
 
 ## Style Customization
 
@@ -166,22 +190,31 @@ nextbitdeskify https://gmail.com --name "Gmail Work" --identifier com.example.gm
 Understanding NextBitDeskify's codebase structure will help you navigate and contribute effectively:
 
 ```tree
-├── bin/                    # CLI source code (TypeScript)
-│   ├── builders/          # Platform-specific builders
-│   ├── helpers/           # Utility functions
-│   └── options/           # CLI option processing
+├── .github/               # CI workflows, issue templates, funding
+├── bin/                   # CLI source code (TypeScript)
+│   ├── builders/         # Platform-specific builders
+│   ├── helpers/          # Shared helpers and config merging
+│   ├── options/          # CLI option processing
+│   └── utils/            # Small utility modules
 ├── docs/                  # Project documentation
-├── src-tauri/             # Tauri application core
-│   ├── src/
-│   │   ├── app/           # Core modules (window, tray, shortcuts)
-│   │   ├── inject/        # Web page injection logic
-│   │   └── lib.rs         # Application entry point
-│   ├── icons/             # macOS icons (.icns)
-│   ├── png/               # Windows/Linux icons (.ico, .png)
-│   ├── nextbitdeskify.json          # App configuration
-│   └── tauri.*.conf.json  # Platform-specific configs
 ├── scripts/               # Build and utility scripts
-└── tests/                 # Test suites
+├── src-tauri/             # Tauri application core
+│   ├── assets/           # Packaging assets and installer files
+│   ├── capabilities/     # Tauri capability definitions
+│   ├── icons/            # macOS icons (.icns)
+│   ├── png/              # Windows/Linux icons (.ico, .png)
+│   ├── src/
+│   │   ├── app/          # Core modules (window, tray, shortcuts)
+│   │   ├── inject/       # Web page injection logic
+│   │   └── lib.rs        # Application entry point
+│   ├── nextbitdeskify.json # Default app configuration
+│   ├── tauri.conf.json   # Shared Tauri config
+│   └── tauri.*.conf.json # Platform-specific configs
+├── tests/                 # Unit and integration test suites
+├── action.yml             # GitHub Action entrypoint
+├── default_app_list.json  # Popular app definitions for release builds
+├── package.json           # Node package metadata and scripts
+└── pnpm-lock.yaml         # Dependency lockfile
 ```
 
 ### Key Components
@@ -342,3 +375,26 @@ If you only want the release workflow smoke test, run `node ./tests/release.js` 
 
 - [CLI Documentation](cli-usage.md)
 - [GitHub Discussions](https://github.com/AquilaWilfred/NextBitDeskify/discussions)
+
+
+---
+
+<table style="width:100%; margin: 1.4rem 0 0.75rem;">
+  <tr>
+    <td align="left"><a href="cli-usage.md">← CLI Guide</a></td>
+    <td align="center"><a href="advanced-usage.md">Advanced Usage</a></td>
+    <td align="right"><a href="faq.md">Troubleshooting →</a></td>
+  </tr>
+</table>
+
+## Why advanced customization matters
+
+- More polished apps: NextBitDeskify supports styling, injected behavior, and window control so your app can feel more native and intentional. Evidence: the advanced guide focuses on customization features and runtime behavior.
+- Better product differentiation: you can make a packaged app feel like a real product instead of a basic wrapper. Evidence: the guide covers window options, style injection, and app-level behavior.
+- Stronger long-term appeal: the more flexible the project is, the more likely it is to attract creators building serious tools. Evidence: the docs connect customization directly to real desktop-app outcomes.
+
+If this level of flexibility helps your product, spreading the word or supporting the repo helps the project grow.
+
+<p align="center">
+  <img src="../Nextbitdeskify_banner.svg" alt="NextBitDeskify logo" width="320">
+</p>

@@ -90,8 +90,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Google.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Bing.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Google.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Bing.png width=600/></td>
     </tr>
     <tr>
         <td>DeepSeek
@@ -106,8 +106,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/DeepSeek.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Grok.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/DeepSeek.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Grok.png width=600/></td>
     </tr>
     <tr>
         <td>ChatGPT
@@ -122,8 +122,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/ChatGPT.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Gemini.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/ChatGPT.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Gemini.png width=600/></td>
     </tr>
     <tr>
       <td>Reddit
@@ -138,8 +138,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
       </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Reddit.png width=600 /></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Kaggle.png width=600 /></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Reddit.png width=600 /></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Kaggle.png width=600 /></td>
     </tr>
     <tr>
         <td>Instagram
@@ -154,8 +154,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Instagram.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/Facebook.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Instagram.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/Facebook.png width=600/></td>
     </tr>
     <tr>
         <td>LinkedIn
@@ -170,8 +170,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/LinkedIn.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/X.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/LinkedIn.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/X.png width=600/></td>
     </tr>
     <tr>
         <td>WhatsApp
@@ -186,8 +186,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/WhatsApp.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/TikTok.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/WhatsApp.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/TikTok.png width=600/></td>
     </tr>
    <tr>
         <td>YouTube
@@ -202,8 +202,8 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
         </td>
     </tr>
     <tr>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/YouTube.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/static/main/nextbitdeskify/YouTube Music.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/YouTube.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/YouTube Music.png width=600/></td>
     </tr>   
 </table>
 

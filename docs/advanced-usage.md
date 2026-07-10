@@ -14,19 +14,18 @@
   </tr>
 </table>
 
-
 Customize NextBitDeskify apps with style modifications, JavaScript injection, and container communication.
 
 > 🚀 This guide is for builders who want more than the default experience: custom UI, injected behavior, and deeper control.
 
 ## What You Can Customize
 
-| Area | What you can do |
-| --- | --- |
-| Visual design | Hide ads, change colors, adjust spacing, and create a more app-like interface |
-| Interaction | Add shortcuts, keyboard helpers, and custom event behavior |
-| Window behavior | Tune sizing, fullscreen, title bar visibility, and app shell behavior |
-| Integration | Communicate between the webpage and the host app using Tauri commands |
+| Area            | What you can do                                                               |
+| --------------- | ----------------------------------------------------------------------------- |
+| Visual design   | Hide ads, change colors, adjust spacing, and create a more app-like interface |
+| Interaction     | Add shortcuts, keyboard helpers, and custom event behavior                    |
+| Window behavior | Tune sizing, fullscreen, title bar visibility, and app shell behavior         |
+| Integration     | Communicate between the webpage and the host app using Tauri commands         |
 
 ## Style Customization
 
@@ -375,7 +374,6 @@ If you only want the release workflow smoke test, run `node ./tests/release.js` 
 
 - [CLI Documentation](cli-usage.md)
 - [GitHub Discussions](https://github.com/AquilaWilfred/NextBitDeskify/discussions)
-
 
 ---
 

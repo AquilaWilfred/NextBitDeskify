@@ -20,12 +20,12 @@
 
 ## Contribution Path
 
-| You want to... | Best next step |
-| --- | --- |
-| Fix a typo or improve docs | Open a PR directly |
-| Add a feature | Open an issue first, then PR |
-| Reproduce a bug | Include steps and expected vs actual behavior |
-| Improve packaging or build behavior | Share logs and platform details |
+| You want to...                      | Best next step                                |
+| ----------------------------------- | --------------------------------------------- |
+| Fix a typo or improve docs          | Open a PR directly                            |
+| Add a feature                       | Open an issue first, then PR                  |
+| Reproduce a bug                     | Include steps and expected vs actual behavior |
+| Improve packaging or build behavior | Share logs and platform details               |
 
 ## Branch Management
 
@@ -115,7 +115,6 @@ For details on project structure and customization, see the [Advanced Usage Guid
 ## More
 
 Before implementing a new feature, it's good practice to open a feature request issue first so it can be discussed. That said, there's no need to open an issue just to fix a typo or improve documentation clarity — feel free to submit a pull request directly for those.
-
 
 ---
 

@@ -130,7 +130,6 @@ Cross-platform builds (Windows/Linux) are handled by CI, not locally.
 2. **NEVER** tag before all checks pass
 3. **ALWAYS** verify the four version files are in sync before tagging
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

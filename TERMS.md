@@ -26,7 +26,6 @@ you agree to the following terms:
 - The NextBitDeskify name and logo remain protected as trademarks.
 - Apps you build with the tool remain your own output, subject to your own licensing choices.
 
-
 ## 1. License
 
 This software is licensed under the MIT License (see LICENSE file). You are
@@ -136,7 +135,6 @@ does not apply to NextBitDeskify's own source code — any distributed copy
 or derivative of the NextBitDeskify tool itself remains subject to the
 MIT License and these Terms of Use, including the attribution and
 trademark requirements above.
-
 
 ---
 

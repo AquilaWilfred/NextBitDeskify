@@ -14,18 +14,17 @@
   </tr>
 </table>
 
-
 Build NextBitDeskify apps online without installing development tools locally.
 
 > ☁️ Great for teams, CI-driven builds, and anyone who wants a packaged app without configuring a full local toolchain.
 
 ## When to Use This
 
-| Scenario | Best fit |
-| --- | --- |
+| Scenario                                                 | Best fit       |
+| -------------------------------------------------------- | -------------- |
 | You want a build without installing Rust or Node locally | GitHub Actions |
-| You need repeatable builds in CI | GitHub Actions |
-| You want to package a website for distribution quickly | GitHub Actions |
+| You need repeatable builds in CI                         | GitHub Actions |
+| You want to package a website for distribution quickly   | GitHub Actions |
 
 ## Quick Steps
 
@@ -66,7 +65,6 @@ Build NextBitDeskify apps online without installing development tools locally.
 
 - [CLI Documentation](cli-usage.md)
 - [Advanced Usage](advanced-usage.md)
-
 
 ---
 

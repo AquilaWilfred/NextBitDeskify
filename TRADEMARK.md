@@ -41,7 +41,6 @@ project. So if you publish a fork or a derived product, please:
 Permission requests: open an issue at
 <https://github.com/AquilaWilfred/NextBitDeskify>.
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

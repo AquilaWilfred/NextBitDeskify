@@ -14,19 +14,18 @@
   </tr>
 </table>
 
-
 Welcome to NextBitDeskify documentation! Here you'll find comprehensive guides and documentation to help you start working with NextBitDeskify as quickly as possible.
 
 > 🧭 Pick the path that fits your goal: package a site, automate builds, or modify the core project.
 
 ## Start Here
 
-| If you want to... | Start with |
-| --- | --- |
-| Package a website into an app | [CLI Command Reference](cli-usage.md) |
-| Build apps online without local setup | [GitHub Actions Online Build](github-actions-usage.md) |
-| Use NextBitDeskify in your own workflow | [NextBitDeskify Action Integration](pake-action.md) |
-| Customize the app behavior itself | [Advanced Usage & Development](advanced-usage.md) |
+| If you want to...                       | Start with                                             |
+| --------------------------------------- | ------------------------------------------------------ |
+| Package a website into an app           | [CLI Command Reference](cli-usage.md)                  |
+| Build apps online without local setup   | [GitHub Actions Online Build](github-actions-usage.md) |
+| Use NextBitDeskify in your own workflow | [NextBitDeskify Action Integration](pake-action.md)    |
+| Customize the app behavior itself       | [Advanced Usage & Development](advanced-usage.md)      |
 
 ## User Guides
 
@@ -45,7 +44,6 @@ Welcome to NextBitDeskify documentation! Here you'll find comprehensive guides a
 - [Releases](https://github.com/AquilaWilfred/NextBitDeskify/releases)
 - [Discussions](https://github.com/AquilaWilfred/NextBitDeskify/discussions)
 - [Issues](https://github.com/AquilaWilfred/NextBitDeskify/issues)
-
 
 ---
 

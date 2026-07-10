@@ -186,7 +186,6 @@ node dist/cli.js "https://accounts.google.com" \
   --ignore-certificate-errors
 ```
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

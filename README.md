@@ -43,11 +43,11 @@ NextBitDeskify is a lightweight desktop packaging toolkit for turning any websit
 
 ## At a Glance
 
-| What you get | Why it stands out |
-| --- | --- |
-| One-command packaging | Turn a URL into a desktop app in seconds |
-| Native webview runtime | Faster and lighter than Electron-style wrappers |
-| Cross-platform output | Build for macOS, Windows, and Linux |
+| What you get                | Why it stands out                                            |
+| --------------------------- | ------------------------------------------------------------ |
+| One-command packaging       | Turn a URL into a desktop app in seconds                     |
+| Native webview runtime      | Faster and lighter than Electron-style wrappers              |
+| Cross-platform output       | Build for macOS, Windows, and Linux                          |
 | Custom styling and behavior | Tweak the experience with injected CSS/JS and window options |
 
 <div align="center">
@@ -338,7 +338,6 @@ If NextBitDeskify has been useful to you:
 NextBitDeskify is open source under the **MIT License** — see [LICENSE](./LICENSE).
 
 Use of this project is also governed by the [Terms of Use](./TERMS.md) and [Trademark Policy](./TRADEMARK.md). In short: apps you build with NextBitDeskify are entirely yours to use, license, and distribute however you like. If you fork the project itself, please give your fork its own name and credit NextBitDeskify as the source.
-
 
 ---
 

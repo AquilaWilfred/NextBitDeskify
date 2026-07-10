@@ -253,7 +253,6 @@ The first `cargo build` on a fresh clone takes 10+ minutes as Cargo compiles eve
   - `src-tauri/tauri.conf.json` - shared Tauri settings.
   - `src-tauri/tauri.{macos,windows,linux}.conf.json` - per-platform overrides.
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

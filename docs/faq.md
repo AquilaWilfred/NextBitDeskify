@@ -14,17 +14,16 @@
   </tr>
 </table>
 
-
 Common issues and solutions when using NextBitDeskify.
 
 > 🔎 Most problems fall into one of three buckets: environment setup, packaging/runtime behavior, or platform-specific quirks.
 
 ## Quick Troubleshooting Map
 
-| If you see... | Likely area |
-| --- | --- |
-| Build errors during install | Rust or system dependency setup |
-| Window opens but the UI feels wrong | App runtime or webview behavior |
+| If you see...                              | Likely area                                |
+| ------------------------------------------ | ------------------------------------------ |
+| Build errors during install                | Rust or system dependency setup            |
+| Window opens but the UI feels wrong        | App runtime or webview behavior            |
 | Packaging succeeds but the app is unstable | Platform-specific packaging or permissions |
 
 ## Table of Contents
@@ -615,7 +614,6 @@ If your issue isn't covered here:
    - Node.js and Rust versions (`node --version`, `rustc --version`)
    - Complete error message
    - Build command you used
-
 
 ---
 

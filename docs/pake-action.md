@@ -20,11 +20,11 @@ Transform any webpage into a lightweight desktop app with a single GitHub Action
 
 ## Why This Action Is Useful
 
-| Benefit | What it unlocks |
-| --- | --- |
-| Zero-friction automation | Package sites from CI with a single workflow step |
-| Reusable workflow | Drop it into any project and keep your build process compact |
-| Cross-platform friendly | Use the same setup to build for Linux, macOS, and Windows |
+| Benefit                  | What it unlocks                                              |
+| ------------------------ | ------------------------------------------------------------ |
+| Zero-friction automation | Package sites from CI with a single workflow step            |
+| Reusable workflow        | Drop it into any project and keep your build process compact |
+| Cross-platform friendly  | Use the same setup to build for Linux, macOS, and Windows    |
 
 > This guide shows how to use NextBitDeskify as a GitHub Action in your own projects. For using our project's built-in GitHub Actions workflow, see [GitHub Actions Usage](github-actions-usage.md).
 
@@ -123,7 +123,6 @@ Use GitHub's matrix strategy to build for multiple platforms simultaneously.
 - [GitHub Actions Usage](github-actions-usage.md) - Using NextBitDeskify's built-in workflow
 - [CLI Usage](cli-usage.md) - Command-line interface reference
 - [Advanced Usage](advanced-usage.md) - Customization options
-
 
 ---
 

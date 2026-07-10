@@ -106,7 +106,6 @@ gh run rerun <run-id> --failed-only
 5. Before replying that a fix is released, verify the public artifact first: `npm view nextbitdeskify-cli version` for CLI releases or `gh release view <tag>` for app releases.
 6. Before closing an issue after release, confirm the target with `gh issue view <id> --json number,title,state,author,url` and include the concrete version or upgrade command in the comment.
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

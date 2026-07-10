@@ -65,7 +65,6 @@ Let the community publish/install small plugins (ad-block rulesets, dark-mode in
 **#1 (multi-AI hub)** is the most on-brand given the "NextBit" name and its own showcase list.  
 It’s a product category that turns it into _"the AI chat client aggregator built on Tauri."_
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

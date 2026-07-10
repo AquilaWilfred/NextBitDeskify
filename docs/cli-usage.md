@@ -14,19 +14,18 @@
   </tr>
 </table>
 
-
 Complete command-line reference and basic usage for NextBitDeskify CLI.
 
 > 🛠️ Whether you want a quick demo app or a polished production build, this guide covers the workflow from first install to advanced packaging.
 
 ## Pick the Right Path
 
-| Goal | Command pattern |
-| --- | --- |
-| Fastest start | `nextbitdeskify https://example.com --name MyApp` |
-| Custom icon | add `--icon ...` |
-| Full-screen or immersive shell | add `--hide-title-bar` and custom sizing |
-| Production-ready packaging | use `--debug` for testing and platform-specific targets for release |
+| Goal                           | Command pattern                                                     |
+| ------------------------------ | ------------------------------------------------------------------- |
+| Fastest start                  | `nextbitdeskify https://example.com --name MyApp`                   |
+| Custom icon                    | add `--icon ...`                                                    |
+| Full-screen or immersive shell | add `--hide-title-bar` and custom sizing                            |
+| Production-ready packaging     | use `--debug` for testing and platform-specific targets for release |
 
 ## Installation
 
@@ -647,7 +646,6 @@ docker run --rm --privileged \
     ghcr.io/AquilaWilfred/nextbitdeskify \
     https://example.com --name myapp --icon ./icon.png --targets appimage
 ```
-
 
 ---
 

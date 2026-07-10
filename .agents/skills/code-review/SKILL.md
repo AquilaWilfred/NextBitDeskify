@@ -53,7 +53,6 @@ pnpm run cli:build
 
 Follow Waza `/check`: findings first, ordered by severity, with tight file/line references. Keep summaries brief.
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

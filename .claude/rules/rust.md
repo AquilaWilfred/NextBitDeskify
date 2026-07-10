@@ -39,7 +39,6 @@
 - `--incognito` trades persistence for clean private sessions; be deliberate around login / cookies / local storage / embedded-WebView detection.
 - Google OAuth and other embedded-WebView restrictions may still apply even with `--new-window` / `--multi-window`.
 
-
 ---
 
 <table style="width:100%; margin: 1.4rem 0 0.75rem;">

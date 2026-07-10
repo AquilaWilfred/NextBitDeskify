@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  Built with Rust and Tauri for installers up to 20x smaller than Electron.
+  Powered by Rust + Tauri, delivering ultra‑light installers that are dramatically leaner than Electron builds — up to 18× smaller (≈94% reduction in size).”
 </p>
 
 > ✨ A modern way to turn any website into a polished desktop app — fast, lightweight, and delightfully simple.

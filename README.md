@@ -203,7 +203,7 @@ Pre-built, ready-to-download desktop apps for widely used sites. More are availa
     </tr>
     <tr>
         <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/YouTube.png width=600/></td>
-        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/YouTube Music.png width=600/></td>
+        <td><img src=https://raw.githubusercontent.com/AquilaWilfred/statics/main/nextbitdeskify/YouTube%20Music.png width=600/></td>
     </tr>   
 </table>
 

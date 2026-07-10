@@ -80,45 +80,39 @@ jobs:
 
   # Multi-OS Rust CLI build — produces native binaries per platform
   build-rust-cli:
-    name: Build Rust CLI (${{ matrix.os }})
+    name: Build Rust CLI (${{ matrix.target }})
     needs: release-apps
     if: needs.release-apps.result == 'success'
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
         include:
           - os: ubuntu-latest
-            artifact_suffix: linux-x86_64
+            target: x86_64-unknown-linux-gnu
             ext: ""
           - os: windows-latest
-            artifact_suffix: windows-x86_64
+            target: x86_64-pc-windows-msvc
             ext: ".exe"
           - os: macos-latest
-            artifact_suffix: macos-x86_64
+            target: x86_64-apple-darwin
             ext: ""
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+      - name: Setup environment (Node + Rust + system deps + cache)
+        uses: ./.github/actions/setup-env
         with:
-          toolchain: stable
+          mode: build
 
-      - name: Cache cargo registry
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            src-tauri/target
-          key: ${{ matrix.os }}-cargo-${{ hashFiles('src-tauri/Cargo.lock') }}
+      - name: Add target triple
+        shell: bash
+        run: rustup target add ${{ matrix.target }}
 
       - name: Build release binary
         working-directory: src-tauri
-        run: cargo build --release
+        run: cargo build --release --target ${{ matrix.target }}
 
       - name: Resolve binary name and path
         id: bin
@@ -127,8 +121,8 @@ jobs:
         run: |
           PKG_NAME=$(grep -m1 '^name' Cargo.toml | sed -E 's/name *= *"(.*)"/\1/')
           echo "pkg_name=$PKG_NAME" >> "$GITHUB_OUTPUT"
-          echo "binary_path=src-tauri/target/release/${PKG_NAME}${{ matrix.ext }}" >> "$GITHUB_OUTPUT"
-          echo "artifact_name=${PKG_NAME}-${{ matrix.artifact_suffix }}" >> "$GITHUB_OUTPUT"
+          echo "binary_path=src-tauri/target/${{ matrix.target }}/release/${PKG_NAME}${{ matrix.ext }}" >> "$GITHUB_OUTPUT"
+          echo "artifact_name=${PKG_NAME}-${{ matrix.target }}" >> "$GITHUB_OUTPUT"
 
       - name: Upload binary artifact
         uses: actions/upload-artifact@v6
@@ -144,6 +138,7 @@ jobs:
           files: ${{ steps.bin.outputs.binary_path }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
   build-popular-apps:
     name: ${{ matrix.config.title }}
